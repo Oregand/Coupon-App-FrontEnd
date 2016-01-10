@@ -1,6 +1,6 @@
 # PromoPay
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+PromoPay is a cloud-enabled, mobile-ready, AngularJS powered Coupon Validation application.
 
   - Type some Markdown on the left
   - See HTML in the right
@@ -23,7 +23,7 @@ This text you see here is *actually* written in Markdown! To get a feel for Mark
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+PromoPay uses a number of open source projects to work properly:
 
 * [AngularJS] - HTML enhanced for web apps!
 * [SASS] - Syntactically Awesome Style Sheets
@@ -52,7 +52,7 @@ $ NODE_ENV=production node app
 
 ### Plugins
 
-Dillinger is currently extended with the following plugins
+PromoPay is currently extended with the following plugins
 
 * Dropbox
 * Github
@@ -70,7 +70,7 @@ Readmes, how to use them in your own application can be found here:
 
 Want to contribute? Great!
 
-Dillinger uses Gulp + Webpack for fast developing.
+PromoPay uses Gulp + Webpack for fast developing.
 Make a change in your file and instantanously see your updates!
 
 Open your favorite Terminal and run these commands.

@@ -15,14 +15,14 @@
           <p class="product-like"><i class="icon ion-heart"></i>Like</p>
           <p class="likes"></i>837</p>
         </div>
-        <p class="product-price" ng-click="showAddToCartPopup(product)">${{product.price}}</p>
+        <p class="product-price" ng-click="showAddToCartPopup(product)">Add Coupon</p>
       </div>
       <div class="item item-body">
         <p class="product-description">{{product.description}}</p>
       </div>
     </div>
     <div class="item item-divider shop-section-title">
-      <span class="title-copy">Related Products</span>
+      <span class="title-copy">Related Coupons</span>
     </div>
     <div class="row shop-products-narrow-cards-outer shop-product-cards-scroller">
       <div ng-repeat="related_product in product.related_products" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: related_product._id})">
@@ -34,7 +34,7 @@
           </div>
           <div class="item item-body">
             <h2 class="card-title">{{related_product.title}}</h2>
-            <p class="card-description"><b>${{related_product.price}}</b> - {{related_product.description}}</p>
+            <p class="card-description"><b>You Save: €{{related_product.price}}</b> - {{related_product.description}}</p>
           </div>
         </div>
       </div>

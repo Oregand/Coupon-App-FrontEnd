@@ -170,7 +170,7 @@ angular.module('your_app_name.app.controllers', [])
 
   $scope.removeProductFromCart = function(product) {
     $ionicActionSheet.show({
-      destructiveText: 'Remove from cart',
+      destructiveText: 'Remove From Selected Coupons',
       cancelText: 'Cancel',
       cancel: function() {
         return true;

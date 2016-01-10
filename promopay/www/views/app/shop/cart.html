@@ -1,9 +1,9 @@
-<ion-view view-title="Shopping cart" class="cart-view" cache-view="false">
+<ion-view view-title="Selected Coupons" class="cart-view" cache-view="false">
   <ion-content>
     <div ng-if="products.length == 0">
       <div class="empty-cart">
         <i class="icon ion-ios-cart-outline"></i>
-        <h3 class="no-products">Your shopping cart is empty</h3>
+        <h3 class="no-products">You do not have any selected coupons yet</h3>
       </div>
     </div>
     <div ng-if="products.length > 0">
@@ -20,7 +20,7 @@
                 </pre-img>
               </div>
               <div class="product-options-wrapper">
-                <div class="row product-options">
+                <!-- <div class="row product-options">
                   <div class="col col-75 select-option">
                     <select >
                       <option value="1">Shiny Black Gold</option>
@@ -33,17 +33,17 @@
                       <option ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]" value="{{i}}">{{i}}</option>
                     </select>
                   </div>
-                </div>
+                </div> -->
                 <div class="row remove-product-wrapper">
                   <div class="col col-center col-75">
                     <!-- <span class="remove-product-button" ng-click="removeProductFromCart({{product}})">Remove</span> -->
                     <!-- <span class="remove-product-button" ng-click="removeProductFromCart(product)">Remove</span> -->
                     <button class="button button-clear button-small button-assertive remove-product-button" ng-click="removeProductFromCart(product)">
-                      Remove
+                      Remove Coupon
                     </button>
                   </div>
                   <div class="col col-center col-25">
-                    <span class="product-price">${{product.price}}</span>
+                    <span class="product-price">Value of Coupon - €{{product.price}}</span>
                   </div>
                 </div>
               </div>
@@ -52,14 +52,14 @@
         </div>
       </div>
       <div class="item item-divider shop-section-title">
-        <span class="title-copy">Sub total</span>
-        <span class="checkout-total-price section-action">${{ getSubtotal() }} USD</span>
+        <span class="title-copy">Total Value Of Your Coupons</span>
+        <span class="checkout-total-price section-action">€{{ getSubtotal() }}</span>
       </div>
-      <div class="row padding">
+      <!-- <div class="row padding">
         <button class="button button-block button-energized checkout-btn" ui-sref="app.shipping-address">
           Continue to Checkout
         </button>
-      </div>
+      </div> -->
     </div>
   </ion-content>
 </ion-view>
