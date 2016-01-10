@@ -7,7 +7,7 @@ angular.module('your_app_name.auth.controllers', [])
 
 	$scope.facebookSignIn = function(){
 		console.log("doing facebbok sign in");
-		$state.go('app.feed');
+		$state.go('app.shop');
 	};
 
 	$ionicModal.fromTemplateUrl('views/app/legal/privacy-policy.html', {
@@ -36,14 +36,14 @@ angular.module('your_app_name.auth.controllers', [])
 .controller('CreateAccountCtrl', function($scope, $state){
 	$scope.doSignUp = function(){
 		console.log("doing sign up");
-		$state.go('app.feed');
+		$state.go('app.shop');
 	};
 })
 
 .controller('WelcomeBackCtrl', function($scope, $state, $ionicModal){
 	$scope.doLogIn = function(){
 		console.log("doing log in");
-		$state.go('app.feed');
+		$state.go('app.shop');
 	};
 
 	$ionicModal.fromTemplateUrl('views/auth/forgot-password.html', {

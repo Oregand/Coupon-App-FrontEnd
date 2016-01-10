@@ -1,7 +1,7 @@
 {
-  "name": "ionTheme_1",
+  "name": "PromoPay",
   "version": "1.2.0",
-  "description": "ionTheme_1: An Ionic project",
+  "description": "PromoPay: A Coupon Application Developed For PHS - Ireland",
   "dependencies": {
     "async": "^1.4.0",
     "bower": "^1.3.3",
