@@ -2,21 +2,11 @@
 
 PromoPay is a cloud-enabled, mobile-ready, AngularJS powered Coupon Validation application.
 
-  - Type some Markdown on the left
-  - See HTML in the right
+  - Download Application
+  - Register
+  - Get Coupons
+  - Scan Coupons
   - Magic
-
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
 
 ### Version
 0.0.4
@@ -27,37 +17,56 @@ PromoPay uses a number of open source projects to work properly:
 
 * [AngularJS] - HTML enhanced for web apps!
 * [SASS] - Syntactically Awesome Style Sheets
-* [Marked] - a super fast port of Markdown to JavaScript
+* [npm] - a super fast package manager for Node dependancies
 * [node.js] - evented I/O for the backend
 * [Express] - fast node.js network app framework [@tjholowaychuk]
 * [Gulp] - the streaming build system
 * [jQuery/JS] - duh
 
-### Installation
+### Installation(Android For Now)
 
 You need Gulp installed globally:
 
-```sh
-$ npm i -g gulp
-```
+1. Download Application & CD Into Application Folder
 
 ```sh
-$ git clone [git-repo-url] dillinger
-$ cd dillinger
-$ npm i -d
-$ mkdir -p downloads/files/{md,html,pdf}
-$ gulp build --prod
-$ NODE_ENV=production node app
+$ git clone git@github.com:Oregand/Coupon-App-FrontEnd.git
+$ cd Coupon-App-FrontEnd/promopay/
 ```
+
+2. Ensure you have a valid version of the Android SDK build tools(Version - 22)
+
+```sh
+http://developer.android.com/sdk/index.html
+```
+
+3. Get ionic
+
+```sh
+$ npm install -g cordova ionic
+```
+
+4. Connect Device Via USB & Enable Debug Mode
+
+```sh
+$ Settings -> Developer Options -> Enable Debug Mode
+```
+
+5. Run Android build
+
+```sh
+$ ionic run android
+```
+
 
 ### Plugins
 
 PromoPay is currently extended with the following plugins
 
-* Dropbox
+* Facebook
 * Github
-* Google Drive
-* OneDrive
+* Google Plus
+* Twitter
 
 Readmes, how to use them in your own application can be found here:
 
@@ -70,45 +79,19 @@ Readmes, how to use them in your own application can be found here:
 
 Want to contribute? Great!
 
-PromoPay uses Gulp + Webpack for fast developing.
-Make a change in your file and instantanously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Second Tab:
-```sh
-$ gulp watch
-```
-
-(optional) Third:
-```sh
-$ karma start
-```
+But seriously, don't even think about it.
 
 ### Docker, N|Solid and NGINX
 
 More details coming soon.
 
-#### docker-compose.yml
-
-Change the path for the nginx conf mounting path to your full path, not mine!
-
 ### Todos
 
- - Write Tests
- - Rethink Github Save
- - Add Code Comments
- - Add Night Mode
+ - Alot!
 
 ### Color Palette
 
 PromoPay color palette: http://paletton.com/#uid=7000u0kiCFn8GVde7NVmtwSqXtg
-
 
 License
 ----
