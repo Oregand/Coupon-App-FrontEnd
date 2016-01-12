@@ -3,16 +3,19 @@ angular.module('underscore', [])
   return window._; // assumes underscore has already been loaded on the page
 });
 
-angular.module('your_app_name', [
+angular.module('PromoPay', [
   'ionic',
-  'your_app_name.common.directives',
-  'your_app_name.app.controllers',
-  'your_app_name.auth.controllers',
-  'your_app_name.app.services',
-  'your_app_name.views',
+  'PromoPay.common.directives',
+  'PromoPay.app.controllers',
+  'PromoPay.auth.controllers',
+  'PromoPay.app.services',
+  'PromoPay.views',
   'underscore',
   'angularMoment',
-  'ngIOS9UIWebViewPatch'
+  'ngIOS9UIWebViewPatch',
+  'jett.ionic.filter.bar',
+  'barcode',
+  'ngCordova'
 ])
 
 

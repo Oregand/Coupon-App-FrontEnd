@@ -1,4 +1,4 @@
-angular.module('your_app_name.app.controllers', [])
+angular.module('PromoPay.app.controllers', [])
 
 
 .controller('AppCtrl', function($scope, AuthService) {
@@ -63,14 +63,32 @@ angular.module('your_app_name.app.controllers', [])
 })
 
 
-.controller('ProductCtrl', function($scope, $stateParams, ShopService, $ionicPopup, $ionicLoading) {
+.controller('ProductCtrl', function($scope, $stateParams, ShopService, $ionicPopup, $ionicLoading, $cordovaSocialSharing) {
   var productId = $stateParams.productId;
+
+  //Set the options for the barcode display
+  var vm = this;
+  vm.options = {
+      width: 2,
+      height: 100,
+      quite: 10,
+      displayValue: true,
+      font: "monospace",
+      textAlign: "center",
+      fontSize: 12,
+      backgroundColor: "",
+      lineColor: "#000"
+  };
 
   ShopService.getProduct(productId).then(function(product){
     $scope.product = product;
   });
 
-  // show add to cart popup on button click
+  $scope.shareCoupon = function () {
+      console.log('made it');
+  };
+
+  // show add to selected coupons popup on button click
   $scope.showAddToCartPopup = function(product) {
     $scope.data = {};
     $scope.data.product = product;
@@ -80,12 +98,12 @@ angular.module('your_app_name.app.controllers', [])
     var myPopup = $ionicPopup.show({
       cssClass: 'add-to-cart-popup',
       templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
-      title: 'Add to Cart',
+      title: 'Add to Selected Coupons',
       scope: $scope,
       buttons: [
         { text: '', type: 'close-popup ion-ios-close-outline' },
         {
-          text: 'Add to cart',
+          text: 'Add to selected coupons',
           onTap: function(e) {
             return $scope.data;
           }
@@ -95,15 +113,28 @@ angular.module('your_app_name.app.controllers', [])
     myPopup.then(function(res) {
       if(res)
       {
-        $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Adding to cart</p>', duration: 1000 });
+        $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Adding to selected coupons</p>', duration: 1000 });
         ShopService.addProductToCart(res.product);
-        console.log('Item added to cart!', res);
+        console.log('Item added to selected coupons!', res);
       }
       else {
         console.log('Popup closed');
       }
     });
   };
+
+  //Social Sharing For individual coupons
+  $scope.shareViaTwitter = function(product) {
+      var message = product.title;
+      var image = product.picture;
+      var link = product.description;
+      $cordovaSocialSharing.share(message, image, link)
+        .then(function(result) {
+          console.log(result);
+        }, function(err) {
+          console.log(err);
+        });
+    };
 })
 
 
@@ -149,9 +180,10 @@ angular.module('your_app_name.app.controllers', [])
 })
 
 
-.controller('ShopCtrl', function($scope, ShopService) {
+.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar) {
   $scope.products = [];
   $scope.popular_products = [];
+  var filterBarInstance;
 
   ShopService.getProducts().then(function(products){
     $scope.products = products;
@@ -162,6 +194,19 @@ angular.module('your_app_name.app.controllers', [])
   ShopService.getProducts().then(function(products){
     $scope.popular_products = products.slice(0, 2);
   });
+
+  $scope.showFilterBar = function () {
+      filterBarInstance = $ionicFilterBar.show({
+        products: $scope.products,
+        update: function (filteredItems, filterText) {
+          $scope.products = filteredItems;
+          if (filterText) {
+            console.log(filterText);
+          }
+        }
+      });
+    };
+
 })
 
 

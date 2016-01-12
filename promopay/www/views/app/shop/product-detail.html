@@ -1,6 +1,6 @@
 <ion-view view-title="" class="product-view">
   <ion-nav-buttons side="secondary">
-    <button class="button button-icon button-clear ion-share"></button>
+    <button class="button button-icon button-clear ion-share" ng-click="shareViaTwitter(product)"></button>
   </ion-nav-buttons>
   <ion-content overflow-scroll="true">
     <div class="product-card-content">
@@ -19,6 +19,10 @@
       </div>
       <div class="item item-body">
         <p class="product-description">{{product.description}}</p>
+        <p class="product-description">
+            <strong>Coupon Barcode</strong></br>
+        </p>
+        <barcode type="{{product.type}}" string="{{product.code}}" options="vm.options" ></barcode><br>
       </div>
     </div>
     <div class="item item-divider shop-section-title">

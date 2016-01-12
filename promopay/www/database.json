@@ -4,6 +4,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -11,6 +13,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -18,6 +22,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -25,6 +31,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -32,6 +40,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -39,6 +49,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -46,6 +58,8 @@
         }
       ],
       "price": 142,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Adipisicing occaecat dolor enim enim ad amet eiusmod minim consectetur fugiat eu amet minim esse. Proident aliquip in nisi in et.",
       "title": "non elit consectetur ex",
       "picture": "img/sample_images/products/1.jpeg",
@@ -55,6 +69,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -62,6 +78,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -69,6 +87,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -76,6 +96,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -83,6 +105,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -90,6 +114,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -97,6 +123,8 @@
         }
       ],
       "price": 160,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Veniam anim ullamco occaecat do ex adipisicing qui. Mollit ipsum duis dolor non proident in.",
       "title": "ipsum exercitation Lorem ea",
       "picture": "img/sample_images/products/5.jpeg",
@@ -106,6 +134,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -113,6 +143,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -120,6 +152,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -127,6 +161,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -134,6 +170,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -141,6 +179,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -148,6 +188,8 @@
         }
       ],
       "price": 273,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Laborum non aliquip cupidatat amet ad exercitation nostrud reprehenderit. Sit aute reprehenderit do reprehenderit et deserunt elit reprehenderit aliqua est sunt commodo eiusmod.",
       "title": "do in reprehenderit et",
       "picture": "img/sample_images/products/3.jpeg",
@@ -157,6 +199,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -164,6 +208,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -171,6 +217,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -178,6 +226,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -185,6 +235,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -192,6 +244,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -199,7 +253,9 @@
         }
       ],
       "price": 25,
-      "description": "Eu consequat pariatur exercitation voluptate deserunt exercitation nulla elit aute voluptate in velit. Duis magna amet duis dolor consequat irure nulla est elit incididunt ipsum tempor.",
+
+"type": "ean",
+"code": "0029000018068",      "description": "Eu consequat pariatur exercitation voluptate deserunt exercitation nulla elit aute voluptate in velit. Duis magna amet duis dolor consequat irure nulla est elit incididunt ipsum tempor.",
       "title": "et amet occaecat est",
       "picture": "img/sample_images/products/7.jpeg",
       "_id": 3
@@ -208,6 +264,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -215,6 +273,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -222,6 +282,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -229,6 +291,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -236,6 +300,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -243,6 +309,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -250,6 +318,8 @@
         }
       ],
       "price": 357,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Aliquip anim ad qui voluptate exercitation mollit nostrud sint consequat consequat culpa eu. Ipsum excepteur velit qui velit dolore in.",
       "title": "non ullamco incididunt in",
       "picture": "img/sample_images/products/8.jpeg",
@@ -259,6 +329,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -266,6 +338,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -273,6 +347,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -280,6 +356,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -287,6 +365,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -294,6 +374,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -301,6 +383,8 @@
         }
       ],
       "price": 191,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Laboris eiusmod labore veniam magna Lorem laborum ex adipisicing irure veniam cupidatat. Aliqua nostrud qui sunt nulla commodo aliquip ipsum duis commodo quis.",
       "title": "sint ea eu cillum",
       "picture": "img/sample_images/products/8.jpeg",
@@ -310,6 +394,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -317,6 +403,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -324,6 +412,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -331,6 +421,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -338,6 +430,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -345,6 +439,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -352,6 +448,8 @@
         }
       ],
       "price": 254,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Eiusmod elit pariatur ea occaecat mollit. Culpa proident aliquip eiusmod do ipsum sit tempor aute aliquip esse veniam culpa occaecat culpa.",
       "title": "velit cillum velit quis",
       "picture": "img/sample_images/products/4.jpeg",
@@ -361,6 +459,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -368,6 +468,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -375,6 +477,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -382,6 +486,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -389,6 +495,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -396,6 +504,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -403,6 +513,8 @@
         }
       ],
       "price": 157,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Eu aute sit sit commodo eiusmod nisi. Enim ut et eu voluptate pariatur enim nisi in sit nisi.",
       "title": "Lorem fugiat velit aute",
       "picture": "img/sample_images/products/6.jpeg",
@@ -412,6 +524,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -419,6 +533,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -426,6 +542,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -433,6 +551,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -440,6 +560,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -447,6 +569,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -454,7 +578,9 @@
         }
       ],
       "price": 43,
-      "description": "Occaecat qui nostrud minim id eu sit minim et non. Consequat non do ullamco irure quis ex dolore nulla ipsum.",
+
+"type": "ean",
+"code": "0029000018068",      "description": "Occaecat qui nostrud minim id eu sit minim et non. Consequat non do ullamco irure quis ex dolore nulla ipsum.",
       "title": "quis pariatur veniam ut",
       "picture": "img/sample_images/products/3.jpeg",
       "_id": 8
@@ -463,6 +589,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -470,6 +598,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -477,6 +607,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -484,6 +616,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -491,6 +625,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -498,6 +634,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -505,6 +643,8 @@
         }
       ],
       "price": 318,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Aliquip quis deserunt esse do velit adipisicing tempor commodo voluptate sunt amet anim. Aute aliquip ex ut labore reprehenderit commodo consectetur exercitation excepteur elit ea laborum quis.",
       "title": "velit minim nisi ex",
       "picture": "img/sample_images/products/1.jpeg",
@@ -514,6 +654,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -521,6 +663,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -528,6 +672,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -535,6 +681,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -542,6 +690,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -549,6 +699,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -556,6 +708,8 @@
         }
       ],
       "price": 313,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Esse veniam do tempor laboris nulla ea occaecat dolor elit mollit proident. Do velit qui deserunt irure est dolore irure nisi aliqua veniam.",
       "title": "ut consectetur exercitation sunt",
       "picture": "img/sample_images/products/8.jpeg",
@@ -565,6 +719,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -572,6 +728,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -579,6 +737,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -586,6 +746,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -593,6 +755,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -600,6 +764,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -607,6 +773,8 @@
         }
       ],
       "price": 363,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Cupidatat do ut cillum ea labore nostrud aliquip ex consequat excepteur. Commodo nostrud minim reprehenderit proident sunt nostrud fugiat sunt veniam sint aliqua.",
       "title": "anim adipisicing nisi consequat",
       "picture": "img/sample_images/products/3.jpeg",
@@ -616,6 +784,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -623,6 +793,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -630,6 +802,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -637,6 +811,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -644,6 +820,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -651,6 +829,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -658,6 +838,8 @@
         }
       ],
       "price": 129,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Fugiat tempor est sint nostrud nisi irure est. Sint cillum quis eu voluptate.",
       "title": "est quis excepteur aute",
       "picture": "img/sample_images/products/1.jpeg",
@@ -667,6 +849,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -674,6 +858,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -681,6 +867,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -688,6 +876,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -695,6 +885,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -702,6 +894,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -709,6 +903,8 @@
         }
       ],
       "price": 288,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Proident labore consectetur et excepteur minim. Aute eiusmod quis elit non tempor sunt officia consectetur sit occaecat consectetur fugiat fugiat consectetur.",
       "title": "esse aliqua minim sunt",
       "picture": "img/sample_images/products/8.jpeg",
@@ -718,6 +914,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -725,6 +923,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -732,6 +932,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -739,6 +941,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -746,6 +950,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -753,6 +959,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -760,7 +968,9 @@
         }
       ],
       "price": 35,
-      "description": "Do minim est non voluptate velit velit fugiat minim esse proident. Fugiat velit ipsum eiusmod ut.",
+
+"type": "ean",
+"code": "0029000018068",      "description": "Do minim est non voluptate velit velit fugiat minim esse proident. Fugiat velit ipsum eiusmod ut.",
       "title": "minim mollit commodo est",
       "picture": "img/sample_images/products/5.jpeg",
       "_id": 14
@@ -769,6 +979,8 @@
       "related_products": [
         {
           "price": 174,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
           "title": "ad Lorem occaecat qui",
           "picture": "img/sample_images/products/2.jpeg",
@@ -776,6 +988,8 @@
         },
         {
           "price": 171,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
           "title": "irure occaecat occaecat quis",
           "picture": "img/sample_images/products/1.jpeg",
@@ -783,6 +997,8 @@
         },
         {
           "price": 349,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
           "title": "culpa duis ex minim",
           "picture": "img/sample_images/products/6.jpeg",
@@ -790,6 +1006,8 @@
         },
         {
           "price": 159,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
           "title": "cupidatat sunt cupidatat excepteur",
           "picture": "img/sample_images/products/7.jpeg",
@@ -797,6 +1015,8 @@
         },
         {
           "price": 147,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
           "title": "aliquip irure culpa excepteur",
           "picture": "img/sample_images/products/4.jpeg",
@@ -804,6 +1024,8 @@
         },
         {
           "price": 375,
+          "type": "ean",
+          "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
           "title": "laborum quis mollit eiusmod",
           "picture": "img/sample_images/products/6.jpeg",
@@ -811,6 +1033,8 @@
         }
       ],
       "price": 281,
+      "type": "ean",
+      "code": "0029000018068",
       "description": "Sit sint ad laborum Lorem ea exercitation dolore officia enim elit eu. Laboris dolore sint Lorem sit elit proident.",
       "title": "sit fugiat aliqua nostrud",
       "picture": "img/sample_images/products/3.jpeg",

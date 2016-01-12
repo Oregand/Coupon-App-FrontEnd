@@ -1,4 +1,4 @@
-angular.module('your_app_name.auth.controllers', [])
+angular.module('PromoPay.auth.controllers', [])
 
 
 .controller('WelcomeCtrl', function($scope, $state, $ionicModal){
