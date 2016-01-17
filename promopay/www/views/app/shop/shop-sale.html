@@ -1,7 +1,7 @@
 <ion-view view-title="Promopay" class="shop-sale-view">
   <ion-content>
     <div class="row shop-products-narrow-cards-outer">
-      <div ng-repeat="product in products" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product._id})">
+      <div ng-repeat="product in products" ng-if="product.expired === true" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product._id})">
         <div class="list card">
           <div class="item item-image">
             <pre-img ratio="_1_1" helper-class="main-image">

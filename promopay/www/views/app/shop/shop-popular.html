@@ -6,12 +6,12 @@
   <ion-content>
 
     <!-- Pull To Get New -->
-    <ion-refresher pulling-text="Pull to refresh..." on-refresh="getNewData()"></ion-refresher>
+    <ion-refresher pulling-icon="ion-arrow-down-b" on-refresh="refreshItems(products)"></ion-refresher>
     <!-- /Pull To Get New -->
 
     <!-- Content -->
     <div class="row shop-products-narrow-cards-outer">
-      <div ng-repeat="product in products" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product._id})">
+      <div ng-repeat="product in products" ng-if="product.expired === false" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product._id})">
         <div class="list card">
           <div class="item item-image">
             <pre-img ratio="_1_1" helper-class="main-image">

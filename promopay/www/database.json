@@ -4,6 +4,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -13,6 +14,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -22,6 +24,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -31,6 +34,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -40,6 +44,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -49,6 +54,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -58,6 +64,7 @@
         }
       ],
       "price": 142,
+      "expired": true,
       "type": "ean",
       "code": "0029000018068",
       "description": "Adipisicing occaecat dolor enim enim ad amet eiusmod minim consectetur fugiat eu amet minim esse. Proident aliquip in nisi in et.",
@@ -69,6 +76,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -78,6 +86,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -87,6 +96,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -96,6 +106,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -105,6 +116,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -114,6 +126,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -123,6 +136,7 @@
         }
       ],
       "price": 160,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Veniam anim ullamco occaecat do ex adipisicing qui. Mollit ipsum duis dolor non proident in.",
@@ -134,6 +148,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -143,6 +158,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -152,6 +168,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -161,6 +178,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -170,6 +188,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -179,6 +198,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -188,6 +208,7 @@
         }
       ],
       "price": 273,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Laborum non aliquip cupidatat amet ad exercitation nostrud reprehenderit. Sit aute reprehenderit do reprehenderit et deserunt elit reprehenderit aliqua est sunt commodo eiusmod.",
@@ -199,6 +220,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -208,6 +230,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -217,6 +240,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -226,6 +250,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -235,6 +260,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -244,6 +270,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -254,6 +281,7 @@
       ],
       "price": 25,
 
+"expired": false,
 "type": "ean",
 "code": "0029000018068",      "description": "Eu consequat pariatur exercitation voluptate deserunt exercitation nulla elit aute voluptate in velit. Duis magna amet duis dolor consequat irure nulla est elit incididunt ipsum tempor.",
       "title": "et amet occaecat est",
@@ -264,6 +292,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -273,6 +302,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -282,6 +312,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -291,6 +322,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -300,6 +332,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -309,6 +342,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -318,6 +352,7 @@
         }
       ],
       "price": 357,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Aliquip anim ad qui voluptate exercitation mollit nostrud sint consequat consequat culpa eu. Ipsum excepteur velit qui velit dolore in.",
@@ -329,6 +364,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -338,6 +374,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -347,6 +384,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -356,6 +394,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -365,6 +404,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -374,6 +414,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -383,6 +424,7 @@
         }
       ],
       "price": 191,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Laboris eiusmod labore veniam magna Lorem laborum ex adipisicing irure veniam cupidatat. Aliqua nostrud qui sunt nulla commodo aliquip ipsum duis commodo quis.",
@@ -394,6 +436,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -403,6 +446,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -412,6 +456,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -421,6 +466,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -430,6 +476,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -439,6 +486,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -448,6 +496,7 @@
         }
       ],
       "price": 254,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Eiusmod elit pariatur ea occaecat mollit. Culpa proident aliquip eiusmod do ipsum sit tempor aute aliquip esse veniam culpa occaecat culpa.",
@@ -459,6 +508,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -468,6 +518,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -477,6 +528,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -486,6 +538,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -495,6 +548,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -504,6 +558,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -513,6 +568,7 @@
         }
       ],
       "price": 157,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Eu aute sit sit commodo eiusmod nisi. Enim ut et eu voluptate pariatur enim nisi in sit nisi.",
@@ -524,6 +580,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -533,6 +590,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -542,6 +600,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -551,6 +610,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -560,6 +620,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -569,6 +630,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -579,6 +641,7 @@
       ],
       "price": 43,
 
+"expired": false,
 "type": "ean",
 "code": "0029000018068",      "description": "Occaecat qui nostrud minim id eu sit minim et non. Consequat non do ullamco irure quis ex dolore nulla ipsum.",
       "title": "quis pariatur veniam ut",
@@ -589,6 +652,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -598,6 +662,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -607,6 +672,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -616,6 +682,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -625,6 +692,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -634,6 +702,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -643,6 +712,7 @@
         }
       ],
       "price": 318,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Aliquip quis deserunt esse do velit adipisicing tempor commodo voluptate sunt amet anim. Aute aliquip ex ut labore reprehenderit commodo consectetur exercitation excepteur elit ea laborum quis.",
@@ -654,6 +724,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -663,6 +734,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -672,6 +744,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -681,6 +754,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -690,6 +764,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -699,6 +774,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -708,6 +784,7 @@
         }
       ],
       "price": 313,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Esse veniam do tempor laboris nulla ea occaecat dolor elit mollit proident. Do velit qui deserunt irure est dolore irure nisi aliqua veniam.",
@@ -719,6 +796,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -728,6 +806,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -737,6 +816,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -746,6 +826,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -755,6 +836,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -764,6 +846,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -773,6 +856,7 @@
         }
       ],
       "price": 363,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Cupidatat do ut cillum ea labore nostrud aliquip ex consequat excepteur. Commodo nostrud minim reprehenderit proident sunt nostrud fugiat sunt veniam sint aliqua.",
@@ -784,6 +868,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -793,6 +878,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -802,6 +888,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -811,6 +898,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -820,6 +908,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -829,6 +918,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -838,6 +928,7 @@
         }
       ],
       "price": 129,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Fugiat tempor est sint nostrud nisi irure est. Sint cillum quis eu voluptate.",
@@ -849,6 +940,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -858,6 +950,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -867,6 +960,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -876,6 +970,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -885,6 +980,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -894,6 +990,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -903,6 +1000,7 @@
         }
       ],
       "price": 288,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Proident labore consectetur et excepteur minim. Aute eiusmod quis elit non tempor sunt officia consectetur sit occaecat consectetur fugiat fugiat consectetur.",
@@ -914,6 +1012,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -923,6 +1022,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -932,6 +1032,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -941,6 +1042,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -950,6 +1052,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -959,6 +1062,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -969,6 +1073,7 @@
       ],
       "price": 35,
 
+"expired": false,
 "type": "ean",
 "code": "0029000018068",      "description": "Do minim est non voluptate velit velit fugiat minim esse proident. Fugiat velit ipsum eiusmod ut.",
       "title": "minim mollit commodo est",
@@ -979,6 +1084,7 @@
       "related_products": [
         {
           "price": 174,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Consequat incididunt qui sunt aliqua veniam deserunt dolore elit deserunt ad. Id culpa do tempor nisi mollit voluptate aute minim reprehenderit.",
@@ -988,6 +1094,7 @@
         },
         {
           "price": 171,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Cillum amet eu do sit labore et qui in aliqua minim est non. Pariatur ipsum fugiat elit ut magna cupidatat consectetur sint veniam ut.",
@@ -997,6 +1104,7 @@
         },
         {
           "price": 349,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Occaecat Lorem cupidatat id voluptate nulla ut enim velit esse. Voluptate culpa consectetur exercitation qui ea et nisi officia enim aute duis ullamco.",
@@ -1006,6 +1114,7 @@
         },
         {
           "price": 159,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Et laborum nulla labore sint ad magna cupidatat veniam. Sint Lorem duis proident non magna.",
@@ -1015,6 +1124,7 @@
         },
         {
           "price": 147,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Nulla reprehenderit cillum et ullamco eiusmod eu quis do sint. Ex occaecat proident ullamco cillum ipsum laboris deserunt voluptate veniam pariatur.",
@@ -1024,6 +1134,7 @@
         },
         {
           "price": 375,
+          "expired": false,
           "type": "ean",
           "code": "0029000018068",
           "description": "Adipisicing ut aliquip ullamco aute ipsum excepteur occaecat. Cupidatat consequat dolor qui veniam reprehenderit ex dolore.",
@@ -1033,6 +1144,7 @@
         }
       ],
       "price": 281,
+      "expired": false,
       "type": "ean",
       "code": "0029000018068",
       "description": "Sit sint ad laborum Lorem ea exercitation dolore officia enim elit eu. Laboris dolore sint Lorem sit elit proident.",

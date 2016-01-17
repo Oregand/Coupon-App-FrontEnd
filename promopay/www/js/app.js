@@ -15,7 +15,8 @@ angular.module('PromoPay', [
   'ngIOS9UIWebViewPatch',
   'jett.ionic.filter.bar',
   'barcode',
-  'ngCordova'
+  'ngCordova',
+  'ngCordovaOauth'
 ])
 
 
@@ -184,7 +185,7 @@ angular.module('PromoPay', [
   //AUTH ROUTES
   .state('facebook-sign-in', {
     url: "/facebook-sign-in",
-    templateUrl: "views/auth/facebook-sign-in.html",
+    templateUrl: "views/auth/dont-have-facebook.html",
     controller: 'WelcomeCtrl'
   })
 
