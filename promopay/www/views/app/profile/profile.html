@@ -14,7 +14,7 @@
                 </div>
                 <h2 class="user-name">{{user.name}}</h2>
                 <p class="user-resume">
-                  <b>{{user.followers}}</b> Followers &nbsp;&nbsp;<b>{{user.following}}</b> Following
+                  Total Vouchers Used: <b>{{user.followers}}</b> &nbsp;&nbsp; Total Amount Saved: <b>{{user.following}}</b>
                 </p>
               </div>
             </div>
@@ -55,17 +55,16 @@
         <div class="row split-actions">
           <div class="col user-interaction">
             <p>
-              <a class="user-interaction-tab" ng-class="{active: ('app.profile.posts' | includedByState)}" nav-transition="none" ng-click="getUserPosts(user._id)" role="tab"><b>{{user.followers}}</b> Posts</a>
+              <a class="user-interaction-tab" ng-class="{active: ('app.profile.posts' | includedByState)}" nav-transition="none" ng-click="getUserPosts(user._id)" role="tab">Total Vouchers Used: <b>{{user.followers}}</b></a>
             </p>
           </div>
           <div class="col user-interaction">
             <p>
-              <a class="user-interaction-tab" ng-class="{active: ('app.profile.likes' | includedByState)}" nav-transition="none" ng-click="getUserLikes( user._id)" role="tab"><b>{{user.following}}</b> Likes</a>
+              <a class="user-interaction-tab" ng-class="{active: ('app.profile.likes' | includedByState)}" nav-transition="none" ng-click="getUserLikes( user._id)" role="tab">Total Amount Saved: <b>{{user.following}}</b></a>
             </p>
           </div>
         </div>
       </div>
     </div>
-    <ion-nav-view class="profile-sub-views" name="profileContent"></ion-nav-view>
   </ion-content>
 </ion-view>

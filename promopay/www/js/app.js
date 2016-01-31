@@ -22,7 +22,7 @@ angular.module('PromoPay', [
 
 // Enable native scrolls for Android platform only,
 // as you see, we're disabling jsScrolling to achieve this.
-.config(function ($ionicConfigProvider) {
+.config(function ($ionicConfigProvider, $ionicFilterBarConfigProvider) {
   if (ionic.Platform.isAndroid()) {
     $ionicConfigProvider.scrolling.jsScrolling(false);
   }
