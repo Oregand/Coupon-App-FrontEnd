@@ -2,62 +2,35 @@ angular.module('PromoPay.app.controllers', [])
 
 
 .controller('AppCtrl', function($scope, AuthService) {
-
-  //this will represent our logged user
-  var user = {
-    about: "Design Lead of Project Fi. Love adventures, green tea, and the color pink.",
-    name: "Brynn Evans",
-    picture: "https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg",
-    _id: 0,
-    followers: 345,
-    following: 58
-  };
-
-  //save our logged user on the localStorage
-  AuthService.saveUser(user);
-  $scope.loggedUser = user;
 })
 
-.controller('ProfileCtrl', function($scope, $stateParams, PostService, $ionicHistory, UserService, $ionicActionSheet, $state, $ionicLoading, $ionicScrollDelegate) {
+.controller('ProfileCtrl', function($scope, AuthService, $stateParams, PostService, $ionicHistory, UserService, $ionicActionSheet, $state, $ionicLoading, $ionicScrollDelegate) {
 
   $scope.$on('$ionicView.afterEnter', function() {
     $ionicScrollDelegate.$getByHandle('profile-scroll').resize();
   });
 
-  var userId = $stateParams.userId;
+  var loggedUser = AuthService.getLoggedUser();
 
-  $scope.myProfile = $scope.loggedUser._id == userId;
-  $scope.posts = [];
-  $scope.likes = [];
+  $scope.myProfile = loggedUser._id;
+  // $scope.likes = [];
   $scope.user = {};
 
-  PostService.getUserPosts(userId).then(function(data){
-    $scope.posts = data;
-  });
-
-  PostService.getUserDetails(userId).then(function(data){
+  PostService.getUserDetails(loggedUser._id).then(function(data){
     $scope.user = data;
   });
 
-  PostService.getUserLikes(userId).then(function(data){
-    $scope.likes = data;
-  });
+  // PostService.getUserLikes(loggedUser._id).then(function(data){
+  //   $scope.likes = data;
+  // });
 
-  $scope.getUserLikes = function(userId){
-    //we need to do this in order to prevent the back to change
-    $ionicHistory.currentView($ionicHistory.backView());
-    $ionicHistory.nextViewOptions({ disableAnimate: true });
-
-    $state.go('app.profile.likes', {userId: userId});
-  };
-
-  $scope.getUserPosts = function(userId){
-    //we need to do this in order to prevent the back to change
-    $ionicHistory.currentView($ionicHistory.backView());
-    $ionicHistory.nextViewOptions({ disableAnimate: true });
-
-    $state.go('app.profile.posts', {userId: userId});
-  };
+  // $scope.getUserLikes = function(userId){
+  //   //we need to do this in order to prevent the back to change
+  //   $ionicHistory.currentView($ionicHistory.backView());
+  //   $ionicHistory.nextViewOptions({ disableAnimate: true });
+  //
+  //   $state.go('app.profile.likes', {userId: userId});
+  // };
 
   $scope.user = UserService.getUser();
 
@@ -207,20 +180,25 @@ angular.module('PromoPay.app.controllers', [])
 })
 
 
-.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout) {
+.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService) {
+
   $scope.products = [];
   $scope.popular_products = [];
   var filterBarInstance;
 
-  ShopService.getProducts().then(function(products){
-    $scope.products = products;
+  AuthService.getOauthToken().then(function(response) {
+    $scope.oauthToken = response.data.access_token;
+
+    PostService.getOfferImpressions($scope.oauthToken).then(function(response) {
+      $scope.offerImpressions = response.data;
+
+      ShopService.getProducts($scope.offerImpressions).then(function(products) {
+        $scope.products = products;
+        console.log($scope.products);
+      });
+    });
   });
 
-
-
-  ShopService.getProducts().then(function(products){
-    $scope.popular_products = products.slice(0, 2);
-  });
 
   $scope.showFilterBar = function () {
     filterBarInstance = $ionicFilterBar.show({

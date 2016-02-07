@@ -28,7 +28,7 @@ angular.module('PromoPay.auth.controllers', [])
   };
 })
 
-.controller('CreateAccountCtrl', function($scope, $state, $q, UserService, $ionicLoading, $cordovaOauth) {
+.controller('CreateAccountCtrl', function($scope, $state, $q, UserService, $ionicLoading, $cordovaOauth, AuthService, PostService, $stateParams) {
 	  // This is the success callback from the login method
 	  var fbLoginSuccess = function(response) {
 	    if (!response.authResponse){
@@ -132,12 +132,31 @@ angular.module('PromoPay.auth.controllers', [])
 		});
 	};
 
+	$scope.doSignUp = function(user) {
+		//save our logged user on the localStorage
+		$scope.user = user;
+		$scope.user.picture = "img/sample_images/people/5.jpeg";
+		$scope.user.followers = 300;
+		$scope.user.following = 401;
+
+		PostService.createUserObj($scope.user).then(function(response){
+	      	$scope.user._id = response.data._id;
+
+			AuthService.saveUser($scope.user);
+			$scope.loggedUser = $scope.user;
+	    });
+
+		console.log($scope.user);
+
+		$state.go('app.shop.popular');
+	};
+
 })
 
 .controller('WelcomeBackCtrl', function($scope, $state, $ionicModal){
 	$scope.doLogIn = function(){
 		console.log("doing log in");
-		$state.go('app.shop');
+		$state.go('app.shop.popular');
 	};
 
 	$ionicModal.fromTemplateUrl('views/auth/forgot-password.html', {

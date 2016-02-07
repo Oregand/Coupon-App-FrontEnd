@@ -1,7 +1,6 @@
 angular.module('PromoPay.app.services', [])
 
 .service('UserService', function() {
-  // For the purpose of this example I will store user data on ionic local storage but you should save it on a database
   var setUser = function(user_data) {
     window.localStorage.starter_facebook_user = JSON.stringify(user_data);
   };
@@ -16,7 +15,7 @@ angular.module('PromoPay.app.services', [])
   };
 })
 
-.service('AuthService', function (){
+.service('AuthService', function ($http, $q){
 
   this.saveUser = function(user){
     window.localStorage.PromoPay_user = JSON.stringify(user);
@@ -28,16 +27,89 @@ angular.module('PromoPay.app.services', [])
       JSON.parse(window.localStorage.PromoPay_user) : null;
   };
 
+  this.generateUserToken = function() {
+    var user = this.getLoggedUser();
+
+    var baseString = user.userName + ":" + user.password;
+    var genertatedToken = btoa(baseString);
+
+    return genertatedToken;
+
+  };
+
+  this.getOauthToken = function(){
+    var dfd = $q.defer();
+
+    var authData = {
+      grant_type: 'client_credentials',
+      client_id: 'PROMOAPP'
+    };
+
+    var genertatedToken = this.generateUserToken();
+    console.log(genertatedToken);
+
+    var authPayload = JSON.stringify(authData);
+
+    $http.post('http://192.168.0.252/api/v1/oauth/tokens',
+    authData, {
+      headers: {
+        'Authorization': "Basic " + genertatedToken
+      }
+    }).success(function(data) {
+      var authToken = data;
+
+      dfd.resolve(authToken);
+    });
+    return dfd.promise;
+  };
+
 })
 
-.service('PostService', function ($http, $q){
+.service('PostService', function ($http, $q, AuthService){
+
+  this.getOfferImpressions = function(token){
+    var dfd = $q.defer();
+
+    var user = AuthService.getLoggedUser();
+
+    var url = 'http://192.168.0.252/api/v1/users/' + user._id + '/offers';
+
+    $http.get(url, {
+      headers: {
+        'Authorization': "Bearer " + token
+      }
+    }).success(function(data) {
+
+      var offerImpressions = data;
+
+      dfd.resolve(data);
+    });
+
+    return dfd.promise;
+  };
+
+  this.createUserObj = function(user){
+    var dfd = $q.defer();
+
+    var userData = JSON.stringify(user);
+
+    $http.post('http://192.168.0.252/api/v1/users', userData).success(function(data) {
+      var usrObj = data;
+
+      dfd.resolve(usrObj);
+    });
+
+    return dfd.promise;
+  };
 
   this.getUserDetails = function(userId){
     var dfd = $q.defer();
 
     $http.get('database.json').success(function(database) {
       //find the user
-      var user = _.find(database.users, function(user){ return user._id == userId; });
+      var user = (window.localStorage.PromoPay_user) ?
+        JSON.parse(window.localStorage.PromoPay_user) : null;
+
       dfd.resolve(user);
     });
 
@@ -127,11 +199,13 @@ angular.module('PromoPay.app.services', [])
 
 .service('ShopService', function ($http, $q, _){
 
-  this.getProducts = function(){
+  this.getProducts = function(offerImpressions) {
     var dfd = $q.defer();
-    $http.get('database.json').success(function(database) {
-      dfd.resolve(database.products);
-    });
+
+    var products = offerImpressions;
+
+    dfd.resolve(products);
+
     return dfd.promise;
   };
 
