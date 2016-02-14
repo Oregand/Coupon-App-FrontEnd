@@ -4,7 +4,7 @@
   "proxies": [
   {
     "path": "/v1",
-    "proxyUrl": "http://192.168.0.252/api/v1/"
+    "proxyUrl": "http://178.62.124.228/api/v1/"
   }
 ],
   "gulpStartupTasks": [

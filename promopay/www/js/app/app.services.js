@@ -27,6 +27,15 @@ angular.module('PromoPay.app.services', [])
       JSON.parse(window.localStorage.PromoPay_user) : null;
   };
 
+  this.validateUserToken = function(user) {
+
+    var baseString = user.userName + ":" + user.password;
+    var genertatedToken = btoa(baseString);
+
+    return genertatedToken;
+
+  };
+
   this.generateUserToken = function() {
     var user = this.getLoggedUser();
 
@@ -50,13 +59,16 @@ angular.module('PromoPay.app.services', [])
 
     var authPayload = JSON.stringify(authData);
 
-    $http.post('http://192.168.0.252/api/v1/oauth/tokens',
+    $http.post('http://178.62.124.228/api/v1/oauth/tokens',
     authData, {
       headers: {
         'Authorization': "Basic " + genertatedToken
       }
     }).success(function(data) {
       var authToken = data;
+      console.log(authToken);
+
+      window.localStorage.authToken = JSON.stringify(authToken);
 
       dfd.resolve(authToken);
     });
@@ -72,7 +84,7 @@ angular.module('PromoPay.app.services', [])
 
     var user = AuthService.getLoggedUser();
 
-    var url = 'http://192.168.0.252/api/v1/users/' + user._id + '/offers';
+    var url = 'http://178.62.124.228/api/v1/users/' + user._id + '/offers';
 
     $http.get(url, {
       headers: {
@@ -93,12 +105,35 @@ angular.module('PromoPay.app.services', [])
 
     var userData = JSON.stringify(user);
 
-    $http.post('http://192.168.0.252/api/v1/users', userData).success(function(data) {
+    $http.post('http://178.62.124.228/api/v1/users', userData).success(function(data) {
       var usrObj = data;
 
       dfd.resolve(usrObj);
     });
 
+    return dfd.promise;
+  };
+
+  this.validateUserObj = function(user){
+    var dfd = $q.defer();
+
+    var genertatedToken = AuthService.validateUserToken(user);
+
+    var authData = {
+      grant_type: 'client_credentials',
+      client_id: 'PROMOAPP'
+    };
+
+    $http.post('http://178.62.124.228/api/v1/oauth/tokens',
+    authData, {
+      headers: {
+        'Authorization': "Basic " + genertatedToken
+      }
+    }).success(function(data) {
+      var authToken = data;
+
+      dfd.resolve(authToken);
+    });
     return dfd.promise;
   };
 
@@ -197,7 +232,7 @@ angular.module('PromoPay.app.services', [])
   };
 })
 
-.service('ShopService', function ($http, $q, _){
+.service('ShopService', function ($http, $q, _, AuthService){
 
   this.getProducts = function(offerImpressions) {
     var dfd = $q.defer();
@@ -206,15 +241,21 @@ angular.module('PromoPay.app.services', [])
 
     dfd.resolve(products);
 
+    window.localStorage.offerImpressions = JSON.stringify(products);
+
     return dfd.promise;
   };
 
   this.getProduct = function(productId){
     var dfd = $q.defer();
-    $http.get('database.json').success(function(database) {
-      var product = _.find(database.products, function(product){ return product._id == productId; });
 
-      dfd.resolve(product);
+    var offerImpressions = JSON.parse(window.localStorage.offerImpressions || '{}');
+
+    angular.forEach(offerImpressions, function(value,index){
+        if(value.id === productId) {
+           var product = value;
+           dfd.resolve(product);
+        }
     });
     return dfd.promise;
   };
@@ -225,7 +266,23 @@ angular.module('PromoPay.app.services', [])
     //check if this product is already saved
     var existing_product = _.find(cart_products, function(product){ return product._id == productToAdd._id; });
 
-    if(!existing_product){
+    if(productToAdd.vchr === null){
+      var genertatedToken = window.localStorage.access_token;
+      console.log(genertatedToken);
+      var user = AuthService.getLoggedUser();
+      var url = 'http://178.62.124.228/api/v1/users/' + user._id + '/vouchers';
+      var payLoad = {
+        offerId: productToAdd.id
+      };
+      $http.post(url,
+      payLoad, {
+        headers: {
+          'Authorization': "Bearer " + genertatedToken
+        }
+      }).success(function(response) {
+        console.log(response);
+        productToAdd.vchr = response.data;
+      });
       cart_products.push(productToAdd);
     }
 

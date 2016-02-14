@@ -6,13 +6,13 @@
   <ion-content>
 
     <!-- Pull To Get New -->
-    <ion-refresher pulling-icon="ion-arrow-down-b" on-refresh="refreshItems(products)"></ion-refresher>
+    <ion-refresher pulling-icon="ion-arrow-down-b" on-refresh="doRefresh()"></ion-refresher>
     <!-- /Pull To Get New -->
 
     <!-- Content -->
     <div class="row shop-products-narrow-cards-outer">
-      <li ng-show="!products.length">No products</li>
-      <div ng-repeat="product in products" track by $index class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product._id})">
+      <li ng-show="!products.length">You have no coupons yet!</li>
+      <div ng-repeat="product in products" track by $index class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
         <div class="list card">
           <div class="item item-image">
             <pre-img ratio="_1_1" helper-class="main-image">

@@ -2,6 +2,13 @@ angular.module('PromoPay.app.controllers', [])
 
 
 .controller('AppCtrl', function($scope, AuthService) {
+
+    $scope.clearCoupons = function () {
+        //Get coupons
+
+        //If expired, delete
+    };
+
 })
 
 .controller('ProfileCtrl', function($scope, AuthService, $stateParams, PostService, $ionicHistory, UserService, $ionicActionSheet, $state, $ionicLoading, $ionicScrollDelegate) {
@@ -82,6 +89,7 @@ angular.module('PromoPay.app.controllers', [])
 
   ShopService.getProduct(productId).then(function(product){
     $scope.product = product;
+    console.log($scope.product);
   });
 
   $scope.shareCoupon = function () {
@@ -180,7 +188,7 @@ angular.module('PromoPay.app.controllers', [])
 })
 
 
-.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService) {
+.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService, $stateParams) {
 
   $scope.products = [];
   $scope.popular_products = [];
@@ -195,6 +203,7 @@ angular.module('PromoPay.app.controllers', [])
       ShopService.getProducts($scope.offerImpressions).then(function(products) {
         $scope.products = products;
         console.log($scope.products);
+
       });
     });
   });

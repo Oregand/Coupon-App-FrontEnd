@@ -6,19 +6,19 @@
     <div class="product-card-content">
       <div class="item item-image">
         <pre-img ratio="_1_1" helper-class="main-image">
-          <img ng-src="{{product.picture}}" spinner-on-load>
+          <img ng-src="img/sample_images/products/2.jpeg" spinner-on-load>
         </pre-img>
       </div>
       <div class="item item-body">
-        <h2 class="product-title">{{product.title}}</h2>
+        <h2 class="product-title">{{product.offer.h1}}</h2>
         <div>
-          <p class="product-like"><i class="icon ion-heart"></i>Like</p>
-          <p class="likes"></i>837</p>
+          <p class="product-like"><i></i>You Save:</p>
+          <p class="likes"><i class="icon ion-social-euro"></i> {{product.offer.val}}</p>
         </div>
         <p class="product-price" ng-click="showAddToCartPopup(product)">Add Coupon</p>
       </div>
       <div class="item item-body">
-        <p class="product-description">{{product.description}}</p>
+        <p class="product-description">{{product.offer.h2}}</p>
         <p class="product-description">
             <strong>Coupon Barcode</strong></br>
         </p>

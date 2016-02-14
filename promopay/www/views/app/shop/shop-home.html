@@ -6,7 +6,7 @@
           <div class="col">
             <pre-img ratio="_2_1" helper-class="shop-home-option-image-outer">
               <!-- <img ng-src="http://lorempixel.com/300/150" spinner-on-load> -->
-              <img ng-src="img/sale.png" spinner-on-load>
+              <img ng-src="img/time.jpg" spinner-on-load>
             </pre-img>
           </div>
         </div>
@@ -29,12 +29,12 @@
         <div class="list card">
           <div class="item item-image">
             <pre-img ratio="_1_1" helper-class="main-image">
-              <img ng-src="{{product.picture}}" spinner-on-load>
+              <img ng-src="img/sample_images/products/2.jpeg" spinner-on-load>
             </pre-img>
           </div>
           <div class="item item-body">
-            <h2 class="card-title">{{product.title}}</h2>
-            <p class="card-description"><b>You Save: €{{product.price}}</b> - {{product.description}}</p>
+            <h2 class="card-title">{{product.offer.h1}}</h2>
+            <p class="card-description"><b>You Save: €{{product.offer.val}}</b> - {{product.offer.h2}}</p>
           </div>
         </div>
       </div>
