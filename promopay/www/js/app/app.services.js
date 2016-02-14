@@ -49,14 +49,17 @@ angular.module('PromoPay.app.services', [])
   this.getOauthToken = function(){
     var dfd = $q.defer();
 
+    if(window.localStorage.access_token && window.localStorage.access_token !== 'undefined') {
+      dfd.resolve(window.localStorage.access_token);
+      return dfd.promise;
+    }
+
     var authData = {
       grant_type: 'client_credentials',
       client_id: 'PROMOAPP'
     };
 
     var genertatedToken = this.generateUserToken();
-    console.log(genertatedToken);
-
     var authPayload = JSON.stringify(authData);
 
     $http.post('http://178.62.124.228/api/v1/oauth/tokens',
@@ -64,13 +67,9 @@ angular.module('PromoPay.app.services', [])
       headers: {
         'Authorization': "Basic " + genertatedToken
       }
-    }).success(function(data) {
-      var authToken = data;
-      console.log(authToken);
-
-      window.localStorage.authToken = JSON.stringify(authToken);
-
-      dfd.resolve(authToken);
+    }).success(function(response) {
+      window.localStorage.access_token = response.data.access_token;
+      dfd.resolve(response.data.access_token);
     });
     return dfd.promise;
   };
@@ -261,12 +260,12 @@ angular.module('PromoPay.app.services', [])
   };
 
   this.addProductToCart = function(productToAdd){
+
     var cart_products = !_.isUndefined(window.localStorage.ionTheme1_cart) ? JSON.parse(window.localStorage.ionTheme1_cart) : [];
-
     //check if this product is already saved
-    var existing_product = _.find(cart_products, function(product){ return product._id == productToAdd._id; });
+    var existing_product = _.find(cart_products, function(product){ return product.id == productToAdd.id; });
 
-    if(productToAdd.vchr === null){
+    if(!existing_product && productToAdd.vchr === null){
       var genertatedToken = window.localStorage.access_token;
       console.log(genertatedToken);
       var user = AuthService.getLoggedUser();
@@ -283,10 +282,12 @@ angular.module('PromoPay.app.services', [])
         console.log(response);
         productToAdd.vchr = response.data;
       });
-      cart_products.push(productToAdd);
     }
 
+    cart_products.push(productToAdd);
     window.localStorage.ionTheme1_cart = JSON.stringify(cart_products);
+
+    return productToAdd;
   };
 
   this.getCartProducts = function(){
@@ -296,7 +297,7 @@ angular.module('PromoPay.app.services', [])
   this.removeProductFromCart = function(productToRemove){
     var cart_products = JSON.parse(window.localStorage.ionTheme1_cart);
 
-    var new_cart_products = _.reject(cart_products, function(product){ return product._id == productToRemove._id; });
+    var new_cart_products = _.reject(cart_products, function(product){ return product.id == productToRemove.id; });
 
     window.localStorage.ionTheme1_cart = JSON.stringify(new_cart_products);
   };

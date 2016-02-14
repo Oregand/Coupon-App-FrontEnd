@@ -25,7 +25,7 @@
       <a class="button button-small button-dark section-action" ui-sref="app.shop.popular">See All Coupons</a>
     </div>
     <div class="row shop-products-narrow-cards-outer shop-product-cards-scroller">
-      <div ng-repeat="product in popular_products" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product._id})">
+      <div ng-repeat="product in products" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id})">
         <div class="list card">
           <div class="item item-image">
             <pre-img ratio="_1_1" helper-class="main-image">

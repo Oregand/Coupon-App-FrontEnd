@@ -153,11 +153,10 @@ angular.module('PromoPay.auth.controllers', [])
 
 			AuthService.saveUser($scope.user);
 			$scope.loggedUser = $scope.user;
+
+			console.log($scope.user);
+			$state.go('app.shop.popular');
 	    });
-
-		console.log($scope.user);
-
-		$state.go('app.shop.popular');
 	};
 
 })

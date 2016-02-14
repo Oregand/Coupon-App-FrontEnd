@@ -106,12 +106,12 @@ angular.module('PromoPay.app.controllers', [])
     var myPopup = $ionicPopup.show({
       cssClass: 'add-to-cart-popup',
       templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
-      title: 'Add to Selected Coupons',
+      title: 'Create This Voucher',
       scope: $scope,
       buttons: [
         { text: '', type: 'close-popup ion-ios-close-outline' },
         {
-          text: 'Add to selected coupons',
+          text: 'Create This Voucher',
           onTap: function(e) {
             return $scope.data;
           }
@@ -122,7 +122,7 @@ angular.module('PromoPay.app.controllers', [])
       if(res)
       {
         $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Adding to selected coupons</p>', duration: 1000 });
-        ShopService.addProductToCart(res.product);
+        $scope.data.product = ShopService.addProductToCart(res.product);
         console.log('Item added to selected coupons!', res);
       }
       else {
@@ -195,7 +195,7 @@ angular.module('PromoPay.app.controllers', [])
   var filterBarInstance;
 
   AuthService.getOauthToken().then(function(response) {
-    $scope.oauthToken = response.data.access_token;
+    $scope.oauthToken = response;
 
     PostService.getOfferImpressions($scope.oauthToken).then(function(response) {
       $scope.offerImpressions = response.data;
@@ -255,7 +255,7 @@ angular.module('PromoPay.app.controllers', [])
   };
 
   $scope.getSubtotal = function() {
-    return _.reduce($scope.products, function(memo, product){ return memo + product.price; }, 0);
+    return _.reduce($scope.products, function(memo, product){ return memo + product.offer.val; }, 0);
   };
 
 })
