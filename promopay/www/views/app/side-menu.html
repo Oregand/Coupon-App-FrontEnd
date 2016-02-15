@@ -13,7 +13,7 @@
 
   <ion-side-menu side="left">
     <ion-content has-bouncing="false" scroll="false" class="menu-outer left-menu">
-      <div multi-bg="['img/menu-bg.jpeg']">
+      <div multi-bg="['img/coffee.jpeg']">
         <div class="row menu-top-options">
           <div class="col col-top">
             <ion-list>
@@ -35,14 +35,10 @@
                 <!-- We need a wrapper with width set for the preload image directive -->
                 <div class="user-image-outer">
                   <pre-img ratio="_1_1" helper-class="rounded-image">
-                    <img class="user-image" ng-src="{{loggedUser.picture}}" spinner-on-load>
+                    <img class="user-image" ng-src="img/avatar1.png" spinner-on-load>
                 	</pre-img>
                 </div>
                 <h2 class="menu-text">{{loggedUser.name}}</h2>
-                <div class="user-inbox">
-                  <i class="menu-icon icon ion-ios-filing"></i>
-                  <span class="inbox-unread">13</span>
-                </div>
               </ion-item>
               <ion-item class="full-width-item" menu-close ui-sref="app.shop.home">
                 <button class="button button-full button-assertive" ng-click="clearCoupons()">

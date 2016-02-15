@@ -1,12 +1,27 @@
 angular.module('PromoPay.app.controllers', [])
 
 
-.controller('AppCtrl', function($scope, AuthService) {
+.controller('AppCtrl', function($scope, AuthService, PostService, ShopService) {
 
     $scope.clearCoupons = function () {
-        //Get coupons
+      AuthService.getOauthToken().then(function(response) {
+        $scope.oauthToken = response;
 
-        //If expired, delete
+        PostService.getOfferImpressions($scope.oauthToken).then(function(response) {
+          $scope.offerImpressions = response.data;
+
+          ShopService.getProducts($scope.offerImpressions).then(function(products) {
+            $scope.products = products;
+
+            angular.forEach($scope.products, function(value,index){
+              console.log(value);
+                // if(value.id === productId) {
+                //   array.splice(value, 1);
+                // }
+            });
+          });
+        });
+      });
     };
 
 })
