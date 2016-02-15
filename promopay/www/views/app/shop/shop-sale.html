@@ -12,11 +12,11 @@
           <div class="item item-body">
             <h2 class="card-title">{{product.offer.h1}}</h2>
             <p class="card-description"><b>€{{product.offer.val}}</b> - {{product.offer.h2}}</p>
-            <button ng-if="product.vchr !== null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-              Voucher
+            <button ng-if="product.vchr !== null" class="button button-block button-assertive" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+              Expired Voucher
             </button>
-            <button ng-if="product.vchr === null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-              Coupon
+            <button ng-if="product.vchr === null" class="button button-block button-assertive" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+              Expired Offer
             </button>
           </div>
         </div>

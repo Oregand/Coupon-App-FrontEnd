@@ -239,29 +239,14 @@ angular.module('PromoPay.app.controllers', [])
   };
 
   $scope.showFilterBar = function () {
-    filterBarInstance = $ionicFilterBar.show({
-      items: $scope.items,
-      update: function (filteredItems, filterText) {
-        $scope.items = filteredItems;
-        if (filterText) {
-          console.log(filterText);
-        }
-      }
-    });
-  };
-
-  $scope.refreshItems = function (products) {
-    if (filterBarInstance) {
-      filterBarInstance();
-      filterBarInstance = null;
-    }
-
-    $timeout(function () {
-      $scope.products = products;
-      $scope.$broadcast('scroll.refreshComplete');
-    }, 1000);
-  };
-
+       filterBarInstance = $ionicFilterBar.show({
+         items: $scope.products,
+         update: function (filteredItems) {
+           $scope.products = filteredItems;
+         },
+         filterProperties: 'h1'
+       });
+     };
 })
 
 
