@@ -155,7 +155,7 @@ angular.module('PromoPay.auth.controllers', [])
 			$scope.loggedUser = $scope.user;
 
 			console.log($scope.user);
-			$state.go('app.shop.popular');
+			$state.go('app.shop.home');
 	    });
 	};
 

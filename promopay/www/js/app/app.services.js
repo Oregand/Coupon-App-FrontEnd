@@ -46,12 +46,14 @@ angular.module('PromoPay.app.services', [])
 
   };
 
-  this.getOauthToken = function(){
+  this.getOauthToken = function(skipCache){
     var dfd = $q.defer();
 
-    if(window.localStorage.access_token && window.localStorage.access_token !== 'undefined') {
-      dfd.resolve(window.localStorage.access_token);
-      return dfd.promise;
+    if(skipCache !== true) {
+      if(window.localStorage.access_token && window.localStorage.access_token !== 'undefined') {
+        dfd.resolve(window.localStorage.access_token);
+        return dfd.promise;
+      }
     }
 
     var authData = {
@@ -78,8 +80,17 @@ angular.module('PromoPay.app.services', [])
 
 .service('PostService', function ($http, $q, AuthService){
 
-  this.getOfferImpressions = function(token){
+  this.getOfferImpressions = function(token, skipCache){
     var dfd = $q.defer();
+
+
+    if(skipCache !== true) {
+      if(window.localStorage.offerImpressions && window.localStorage.offerImpressions !== 'undefined') {
+        var offerImpressionsArray = JSON.parse(window.localStorage.offerImpressions);
+        dfd.resolve(offerImpressionsArray);
+        return dfd.promise;
+      }
+    }
 
     var user = AuthService.getLoggedUser();
 
@@ -90,9 +101,8 @@ angular.module('PromoPay.app.services', [])
         'Authorization': "Bearer " + token
       }
     }).success(function(data) {
-
       var offerImpressions = data;
-
+      window.localStorage.offerImpressions = JSON.stringify(offerImpressions);
       dfd.resolve(data);
     });
 
@@ -235,12 +245,8 @@ angular.module('PromoPay.app.services', [])
 
   this.getProducts = function(offerImpressions) {
     var dfd = $q.defer();
-
     var products = offerImpressions;
-
     dfd.resolve(products);
-
-    window.localStorage.offerImpressions = JSON.stringify(products);
 
     return dfd.promise;
   };
@@ -250,7 +256,7 @@ angular.module('PromoPay.app.services', [])
 
     var offerImpressions = JSON.parse(window.localStorage.offerImpressions || '{}');
 
-    angular.forEach(offerImpressions, function(value,index){
+    angular.forEach(offerImpressions.data, function(value,index){
         if(value.id === productId) {
            var product = value;
            dfd.resolve(product);

@@ -15,7 +15,7 @@
           <p class="product-like"><i></i>You Save:</p>
           <p class="likes"><i class="icon ion-social-euro"></i> {{product.offer.val}}</p>
         </div>
-        <p class="product-price" ng-click="showAddToCartPopup(product)">Create Voucher</p>
+        <p class="product-price" ng-if="product.vchr === null" ng-click="showAddToCartPopup(product)">Create Voucher</p>
       </div>
       <div class="item item-body">
         <p class="product-description">{{product.offer.h2}}</p>

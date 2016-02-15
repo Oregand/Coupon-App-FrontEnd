@@ -70,7 +70,8 @@ angular.module('PromoPay.app.controllers', [])
 })
 
 
-.controller('ProductCtrl', function($scope, $stateParams, ShopService, $ionicPopup, $ionicLoading, $cordovaSocialSharing) {
+.controller('ProductCtrl', function($scope, $stateParams, ShopService, $ionicPopup, $ionicLoading, $cordovaSocialSharing, PostService, AuthService) {
+  $scope.products = [];
   var productId = $stateParams.productId;
 
   //Set the options for the barcode display
@@ -124,6 +125,21 @@ angular.module('PromoPay.app.controllers', [])
         $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Adding to selected coupons</p>', duration: 1000 });
         $scope.data.product = ShopService.addProductToCart(res.product);
         console.log('Item added to selected coupons!', res);
+
+        var skipCache = true;
+
+        AuthService.getOauthToken(skipCache).then(function(response) {
+          $scope.oauthToken = response;
+
+          PostService.getOfferImpressions($scope.oauthToken, skipCache).then(function(response) {
+            $scope.offerImpressions = response.data;
+
+            ShopService.getProducts($scope.offerImpressions).then(function(products) {
+              $scope.products = products;
+              console.log($scope.products);
+            });
+          });
+        });
       }
       else {
         console.log('Popup closed');
@@ -202,12 +218,25 @@ angular.module('PromoPay.app.controllers', [])
 
       ShopService.getProducts($scope.offerImpressions).then(function(products) {
         $scope.products = products;
-        console.log($scope.products);
 
       });
     });
   });
 
+  $scope.doRefresh = function () {
+    AuthService.getOauthToken().then(function(response) {
+      $scope.oauthToken = response;
+
+      PostService.getOfferImpressions($scope.oauthToken).then(function(response) {
+        $scope.offerImpressions = response.data;
+
+        ShopService.getProducts($scope.offerImpressions).then(function(products) {
+          $scope.products = products;
+
+        });
+      });
+    });
+  };
 
   $scope.showFilterBar = function () {
     filterBarInstance = $ionicFilterBar.show({
