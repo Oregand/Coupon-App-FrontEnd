@@ -15,7 +15,7 @@ angular.module('PromoPay.app.controllers', [])
 
             angular.forEach($scope.products, function(value,index){
               console.log(value);
-                // if(value.id === productId) {
+                // if(value.vchr.spends.length > 0) {
                 //   array.splice(value, 1);
                 // }
             });
