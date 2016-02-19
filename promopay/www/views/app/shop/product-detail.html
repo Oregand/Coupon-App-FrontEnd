@@ -6,7 +6,7 @@
     <div class="product-card-content">
       <div class="item item-image">
         <pre-img ratio="_1_1" helper-class="main-image">
-          <img ng-src="img/sample_images/products/2.jpeg" spinner-on-load>
+          <img ng-src="http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}}" spinner-on-load>
         </pre-img>
       </div>
       <div class="item item-body">
@@ -19,30 +19,40 @@
       </div>
       <div class="item item-body">
         <p class="product-description">{{product.offer.h2}}</p>
+
         <label class="item item-input item-select">
           <div class="input-label">
             Select Barcode Type
           </div>
-          <select>
-            <option>QR Code</option>
-            <option selected>Scan Code</option>
-            <option>Human Code</option>
+          <select ng-model="codeDropdown">
+            <option value="" selected>All</option>
+            <option value="qr" selected>QR Code</option>
+            <option value="scan">Scan Code</option>
+            <option value="human">Human Code</option>
           </select>
         </label>
-        <p class="product-description">
-            <strong>QR Code</strong></br>
-        </p>
-        <qr text="qrData" ng-if="qrData"></qr>
-        </br></br>
-        <p class="product-description">
-            <strong>Machine Readable Barcode</strong></br>
-        </p>
-        <barcode type="code128b" render="img" string="{{product.vchr.bcodes[2].b}}" options="vm.options" ></barcode>
-        </br></br>
-        <p class="product-description">
-            <strong>Human Readable Barcode</strong></br>
-            {{product.vchr.bcodes[2].b}}
-        </p>
+
+        <div class="barcodes">
+          <div class="qr-code animate-hide" ng-show="codeDropdown=='qr'">
+            <p class="product-description">
+                <strong>QR Code</strong></br>
+            </p>
+            <qr text="qrData" ng-if="qrData"></qr>
+          </div>
+
+          <div class="machine-code animate-hide" ng-show="codeDropdown=='scan'">
+            <p class="product-description">
+                <strong>Machine Readable Barcode</strong></br>
+            </p>
+            <barcode type="code128b" render="img" string="{{product.vchr.bcodes[2].b}}" options="vm.options" ></barcode>
+          </div>
+          <div class="human-code animate-hide" ng-show="codeDropdown=='human'">
+            <p class="product-description">
+                <strong>Human Readable Barcode</strong></br>
+                {{product.vchr.bcodes[2].b}}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </ion-content>

@@ -89,7 +89,6 @@ angular.module('PromoPay.app.controllers', [])
   $scope.products = [];
   var productId = $stateParams.productId;
 
-
   //Set the options for the barcode display
   var vm = this;
   vm.options = {
@@ -226,6 +225,7 @@ angular.module('PromoPay.app.controllers', [])
 
   $scope.products = [];
   $scope.popular_products = [];
+  $scope.listCanSwipe = true;
   var filterBarInstance;
 
   AuthService.getOauthToken().then(function(response) {
@@ -263,7 +263,7 @@ angular.module('PromoPay.app.controllers', [])
          update: function (filteredItems) {
            $scope.products = filteredItems;
          },
-         filterProperties: 'h1'
+         filterProperties: 'id'
        });
      };
 })
