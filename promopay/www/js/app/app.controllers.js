@@ -88,7 +88,6 @@ angular.module('PromoPay.app.controllers', [])
 .controller('ProductCtrl', function($scope, $stateParams, ShopService, $ionicPopup, $ionicLoading, $cordovaSocialSharing, PostService, AuthService) {
   $scope.products = [];
   var productId = $stateParams.productId;
-  $scope.string = 'YOUR TEXT TO ENCODE';
 
 
   //Set the options for the barcode display
@@ -107,6 +106,8 @@ angular.module('PromoPay.app.controllers', [])
 
   ShopService.getProduct(productId).then(function(product){
     $scope.product = product;
+    $scope.qrData = $scope.product.vchr.bcodes[2].b;
+
     console.log($scope.product);
   });
 

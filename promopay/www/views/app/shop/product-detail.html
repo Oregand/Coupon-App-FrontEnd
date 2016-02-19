@@ -19,10 +19,20 @@
       </div>
       <div class="item item-body">
         <p class="product-description">{{product.offer.h2}}</p>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Select Barcode Type
+          </div>
+          <select>
+            <option>QR Code</option>
+            <option selected>Scan Code</option>
+            <option>Human Code</option>
+          </select>
+        </label>
         <p class="product-description">
             <strong>QR Code</strong></br>
         </p>
-        <qr text="qrcodeString"></qr>
+        <qr text="qrData" ng-if="qrData"></qr>
         </br></br>
         <p class="product-description">
             <strong>Machine Readable Barcode</strong></br>
