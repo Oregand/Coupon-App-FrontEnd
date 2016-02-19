@@ -172,7 +172,7 @@ angular.module('PromoPay.auth.controllers', [])
 				window.localStorage.access_token = response.data.access_token;
 				AuthService.saveUser($scope.user);
 				$scope.loggedUser = $scope.user;
-				$state.go('app.shop.popular');
+				$state.go('app.shop.home');
 			} else {
 				var alertPopup = $ionicPopup.alert({
 				  title: 'Whoops!',

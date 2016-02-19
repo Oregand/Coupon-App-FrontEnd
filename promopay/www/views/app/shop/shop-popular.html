@@ -12,7 +12,7 @@
     <!-- Content -->
     <div class="row shop-products-narrow-cards-outer">
       <li ng-show="!products.length">You have no coupons yet!</li>
-      <div ng-repeat="product in products" ng-if="product.vchr.spends.length == 0 || product.vchr == undefined"  track by $index class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+      <div ng-repeat="product in products" ng-if="product.vchr.spends.length == 0 || product.vchr == undefined"  track by $index class="col col-100 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
         <div class="list card">
           <div class="item item-image">
             <pre-img ratio="_1_1" helper-class="main-image">
@@ -23,10 +23,10 @@
             <h2 class="card-title">{{product.offer.h1}}</h2>
             <p class="card-description"><b>€{{product.offer.val}}</b> - {{product.offer.h2}}</p>
             <button ng-if="product.vchr !== null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-              Voucher
+              <i class="icon ion-ios-pricetags"></i> Voucher
             </button>
             <button ng-if="product.vchr === null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-              Offer
+              <i class="icon ion-ios-pricetags-outline"></i> Offer
             </button>
           </div>
         </div>

@@ -20,9 +20,19 @@
       <div class="item item-body">
         <p class="product-description">{{product.offer.h2}}</p>
         <p class="product-description">
-            <strong>Coupon Barcode</strong></br>
+            <strong>QR Code</strong></br>
         </p>
-        <barcode type="code128b" render="img" string="{{product.vchr.bcodes[2].b}}" options="vm.options" ></barcode><br>
+        <qr text="qrcodeString"></qr>
+        </br></br>
+        <p class="product-description">
+            <strong>Machine Readable Barcode</strong></br>
+        </p>
+        <barcode type="code128b" render="img" string="{{product.vchr.bcodes[2].b}}" options="vm.options" ></barcode>
+        </br></br>
+        <p class="product-description">
+            <strong>Human Readable Barcode</strong></br>
+            {{product.vchr.bcodes[2].b}}
+        </p>
       </div>
     </div>
   </ion-content>

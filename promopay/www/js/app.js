@@ -16,7 +16,8 @@ angular.module('PromoPay', [
   'jett.ionic.filter.bar',
   'barcode',
   'ngCordova',
-  'ngCordovaOauth'
+  'ngCordovaOauth',
+  'ja.qr'
 ])
 
 
