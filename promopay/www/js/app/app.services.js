@@ -29,7 +29,7 @@ angular.module('PromoPay.app.services', [])
 
   this.validateUserToken = function(user) {
 
-    var baseString = user.userName + ":" + user.password;
+    var baseString = user.email + ":" + user.password;
     var genertatedToken = btoa(baseString);
 
     return genertatedToken;
@@ -39,7 +39,7 @@ angular.module('PromoPay.app.services', [])
   this.generateUserToken = function() {
     var user = this.getLoggedUser();
 
-    var baseString = user.userName + ":" + user.password;
+    var baseString = user.email + ":" + user.password;
     var genertatedToken = btoa(baseString);
 
     return genertatedToken;
@@ -110,6 +110,21 @@ angular.module('PromoPay.app.services', [])
   };
 
   this.createUserObj = function(user){
+    var dfd = $q.defer();
+
+    var userData = JSON.stringify(user);
+
+    $http.post('http://178.62.124.228/api/v1/users', userData).success(function(data) {
+      var usrObj = data;
+
+      dfd.resolve(usrObj);
+    });
+
+    return dfd.promise;
+  };
+
+
+  this.resetPassword = function(user){
     var dfd = $q.defer();
 
     var userData = JSON.stringify(user);

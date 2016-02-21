@@ -24,7 +24,7 @@
         <form name="login_form" class="" novalidate>
           <div class="form-fields-outer list list-inset">
             <label class="item item-input">
-              <input type="text" placeholder="Username" name="username" ng-model="user.userName" required>
+              <input type="email" placeholder="Email" name="email" ng-model="user.email" required>
             </label>
             <label class="item item-input" show-hide-container>
               <input type="password" placeholder="Password" name="password" ng-model="user.password" required show-hide-input>
@@ -36,7 +36,7 @@
           </div>
         </form>
         <div class="alternative-actions">
-          <a class="forgot-password button button-clear button-block" ng-click="showForgotPassword()">
+          <a class="forgot-password button button-clear button-block" ng-click="showForgotPassword(user)">
             Forgot your password?
           </a>
         </div>

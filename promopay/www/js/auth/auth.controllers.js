@@ -195,6 +195,11 @@ angular.module('PromoPay.auth.controllers', [])
 
   $scope.showForgotPassword = function() {
     $scope.forgot_password_modal.show();
+
+	PostService.resetPassword($scope.user).then(function(response){
+		console.log(response);
+	});
+
   };
 
   // This is the success callback from the login method

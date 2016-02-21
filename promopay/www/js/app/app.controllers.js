@@ -105,7 +105,9 @@ angular.module('PromoPay.app.controllers', [])
 
   ShopService.getProduct(productId).then(function(product){
     $scope.product = product;
-    $scope.qrData = $scope.product.vchr.bcodes[2].b;
+    if($scope.product.vchr !== null) {
+      $scope.qrData = $scope.product.vchr.bcodes[2].b;
+    }
 
     console.log($scope.product);
   });
@@ -153,6 +155,7 @@ angular.module('PromoPay.app.controllers', [])
 
             ShopService.getProducts($scope.offerImpressions).then(function(products) {
               $scope.products = products;
+              $scope.qrData = $scope.product.vchr.bcodes[2].b;
               console.log($scope.products);
             });
           });
