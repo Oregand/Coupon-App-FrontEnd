@@ -13,21 +13,21 @@
     <div class="row shop-products-narrow-cards-outer">
       <li ng-show="!products.length">You have no coupons yet!</li>
       <div ng-repeat="product in products" ng-if="product.vchr.spends.length == 0 || product.vchr == undefined ||  product.vchr !== null"  track by $index class="col col-100 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-        <div class="list card">
-          <div class="item item-image">
-            <pre-img ratio="_1_1" helper-class="main-image">
-              <img ng-src="http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}}" spinner-on-load>
-            </pre-img>
-          </div>
-          <div class="item item-body">
-            <h2 class="card-title">{{product.offer.h1}}</h2>
-            <p class="card-description"><b>€{{product.offer.val}}</b> - {{product.offer.h2}}</p>
-            <button ng-if="product.vchr !== null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-              <i class="icon ion-ios-pricetags"></i> Voucher
-            </button>
-            <button ng-if="product.vchr === null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-              <i class="icon ion-ios-pricetags-outline"></i> Offer
-            </button>
+        <div class="list">
+          <div class="row">
+            <div class="col-25 list-image" style="background-image: url(http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}})"></div>
+            <div class="col-75">
+              <div class="item item-body">
+                <h2 class="card-title">{{product.offer.h1}}</h2>
+                <p class="card-description"><b>€{{product.offer.val}}</b> - {{product.offer.h2}}</p>
+                <button ng-if="product.vchr !== null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+                  <i class="icon ion-ios-pricetags"></i> Voucher
+                </button>
+                <button ng-if="product.vchr === null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+                  <i class="icon ion-ios-pricetags-outline"></i> Offer
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

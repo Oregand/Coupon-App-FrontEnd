@@ -187,8 +187,6 @@ angular.module('PromoPay.app.controllers', [])
   $scope.listCanSwipe = true;
   var filterBarInstance;
 
-  //if nothing in local memory - making forst call, show loading screen
-
   if(window.localStorage.offerImpressions !== 'undefined') {
     $ionicLoading.show({
       template: 'loading'
