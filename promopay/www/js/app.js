@@ -53,16 +53,6 @@ angular.module('PromoPay', [
     controller: 'AppCtrl'
   })
 
-  .state('app.feed', {
-    url: "/feed",
-    views: {
-      'menuContent': {
-        templateUrl: "views/app/feed.html",
-        controller: "FeedCtrl"
-      }
-    }
-  })
-
   .state('app.profile', {
     abstract: true,
     url: '/profile/:userId',
@@ -211,7 +201,7 @@ angular.module('PromoPay', [
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/facebook-sign-in');
-  // $urlRouterProvider.otherwise('/app/feed');
+
 })
 
 ;

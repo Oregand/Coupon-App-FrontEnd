@@ -41,7 +41,7 @@
     "cordova-plugin-transport-security"
   ],
   "cordovaPlatforms": [
-    "ios",
-    "android"
+    "android",
+    "ios"
   ]
 }

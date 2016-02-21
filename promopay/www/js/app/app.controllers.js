@@ -181,68 +181,33 @@ angular.module('PromoPay.app.controllers', [])
     };
 })
 
-
-.controller('FeedCtrl', function($scope, PostService) {
-  $scope.posts = [];
-  $scope.page = 1;
-  $scope.totalPages = 1;
-
-  $scope.doRefresh = function() {
-    PostService.getFeed(1)
-    .then(function(data){
-      $scope.totalPages = data.totalPages;
-      $scope.posts = data.posts;
-
-      $scope.$broadcast('scroll.refreshComplete');
-    });
-  };
-
-  $scope.getNewData = function() {
-    //do something to load your new data here
-    $scope.$broadcast('scroll.refreshComplete');
-  };
-
-  $scope.loadMoreData = function(){
-    $scope.page += 1;
-
-    PostService.getFeed($scope.page)
-    .then(function(data){
-      //We will update this value in every request because new posts can be created
-      $scope.totalPages = data.totalPages;
-      $scope.posts = $scope.posts.concat(data.posts);
-
-      $scope.$broadcast('scroll.infiniteScrollComplete');
-    });
-  };
-
-  $scope.moreDataCanBeLoaded = function(){
-    return $scope.totalPages > $scope.page;
-  };
-
-  $scope.doRefresh();
-
-})
-
-
-.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService, $stateParams) {
+.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService, $stateParams, $ionicLoading, $state) {
 
   $scope.products = [];
-  $scope.popular_products = [];
   $scope.listCanSwipe = true;
   var filterBarInstance;
 
-  AuthService.getOauthToken().then(function(response) {
-    $scope.oauthToken = response;
+  //if nothing in local memory - making forst call, show loading screen
 
-    PostService.getOfferImpressions($scope.oauthToken).then(function(response) {
-      $scope.offerImpressions = response.data;
+  if(window.localStorage.offerImpressions !== 'undefined') {
+    $ionicLoading.show({
+      template: 'loading'
+    });
 
-      ShopService.getProducts($scope.offerImpressions).then(function(products) {
-        $scope.products = products;
+    AuthService.getOauthToken().then(function(response) {
+      $scope.oauthToken = response;
 
+      PostService.getOfferImpressions($scope.oauthToken).then(function(response) {
+        $scope.offerImpressions = response.data;
+
+        ShopService.getProducts($scope.offerImpressions).then(function(products) {
+          $scope.products = products;
+          $ionicLoading.hide();
+
+        });
       });
     });
-  });
+  }
 
   $scope.doRefresh = function () {
     AuthService.getOauthToken().then(function(response) {
@@ -254,7 +219,7 @@ angular.module('PromoPay.app.controllers', [])
         ShopService.getProducts($scope.offerImpressions).then(function(products) {
           $scope.products = products;
           console.log($scope.products);
-
+          $state.go($state.current, {}, {reload: true});
         });
       });
     });

@@ -8,7 +8,7 @@
     </div>
     <div ng-if="products.length > 0">
       <div class="products-list">
-        <div class="product-list-item" ng-repeat="product in products">
+        <div class="product-list-item" ng-repeat="product in products" ui-sref="app.product-detail({productId: product.id})">
           <div class="row product-title-wrapper">
             <span class="product-title">{{product.offer.h1}}</span>
           </div>
@@ -29,13 +29,6 @@
                   <div class="col col-center col-25">
                     <span class="product-price">Value: €{{product.offer.val}}</span>
                   </div>
-                </div>
-                <div class="row remove-product-wrapper">
-                    <div class="col col-center col-100">
-                      <button class="button button-block button-energized checkout-btn" ui-sref="app.product-detail({productId: product.id})">
-                        Open This Coupon
-                      </button>
-                    </div>
                 </div>
               </div>
             </div>
