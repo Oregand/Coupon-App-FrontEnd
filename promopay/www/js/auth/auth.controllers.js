@@ -144,7 +144,7 @@ angular.module('PromoPay.auth.controllers', [])
 	$scope.doSignUp = function(user) {
 		//save our logged user on the localStorage
 		$scope.user = user;
-		$scope.user.picture = "img/sample_images/people/5.jpeg";
+		$scope.user.picture = "img/avatar1.png";
 		$scope.user.followers = 300;
 		$scope.user.following = 401;
 

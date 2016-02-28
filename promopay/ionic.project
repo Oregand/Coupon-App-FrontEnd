@@ -1,12 +1,12 @@
 {
   "name": "PromoPay",
-  "app_id": "",
+  "app_id": "a4c01964",
   "proxies": [
-  {
-    "path": "/v1",
-    "proxyUrl": "http://178.62.124.228/api/v1/"
-  }
-],
+    {
+      "path": "/v1",
+      "proxyUrl": "http://178.62.124.228/api/v1/"
+    }
+  ],
   "gulpStartupTasks": [
     "default",
     "watch",

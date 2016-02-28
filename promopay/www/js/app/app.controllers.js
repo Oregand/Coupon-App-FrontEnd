@@ -189,7 +189,7 @@ angular.module('PromoPay.app.controllers', [])
 
   if(window.localStorage.offerImpressions !== 'undefined') {
     $ionicLoading.show({
-      template: 'loading'
+      template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Loading Offers</p>', duration: 3000
     });
 
     AuthService.getOauthToken().then(function(response) {
