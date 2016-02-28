@@ -1,0 +1,44 @@
+<ion-view view-title="Selected Coupons" class="cart-view" cache-view="false">
+  <ion-content>
+    <div ng-if="products.length == 0">
+      <div class="empty-cart">
+        <i class="icon ion-ios-cart-outline"></i>
+        <h3 class="no-products">You do not have any selected coupons yet</h3>
+      </div>
+    </div>
+    <div ng-if="products.length > 0">
+      <div class="products-list">
+        <div class="product-list-item" ng-repeat="product in products" ui-sref="app.product-detail({productId: product.id})">
+          <div class="row product-title-wrapper">
+            <span class="product-title">{{product.offer.h1}}</span>
+          </div>
+          <div class="row product-content-wrapper">
+            <div class="col">
+              <div class="product-picture">
+                <pre-img ratio="_1_1" helper-class="main-image">
+                  <img ng-src="img/sample_images/products/2.jpeg" spinner-on-load>
+                </pre-img>
+              </div>
+              <div class="product-options-wrapper">
+                <div class="row remove-product-wrapper">
+                  <div class="col col-center col-75">
+                    <button class="button button-clear button-small button-assertive remove-product-button" ng-click="removeProductFromCart(product)">
+                      Remove Coupon
+                    </button>
+                  </div>
+                  <div class="col col-center col-25">
+                    <span class="product-price">Value: €{{product.offer.val}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item item-divider shop-section-title">
+        <span class="title-copy">Total Value Of Your Coupons</span>
+        <span class="checkout-total-price section-action">€{{ getSubtotal() }}</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

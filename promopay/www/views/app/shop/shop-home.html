@@ -1,0 +1,43 @@
+<ion-view view-title="Promopay" class="shop-home-view">
+  <ion-content>
+    <div class="list shop-home-options-list">
+      <a class="item shop-home-option-item" ui-sref="app.cart">
+        <div class="row">
+          <div class="col">
+            <pre-img ratio="_2_1" helper-class="shop-home-option-image-outer">
+              <!-- <img ng-src="http://lorempixel.com/300/150" spinner-on-load> -->
+              <img ng-src="img/time.jpg" spinner-on-load>
+            </pre-img>
+          </div>
+        </div>
+        <div class="row option-copy">
+          <div class="col col-75">
+            <span>See Your Selected Coupons</span>
+          </div>
+          <div class="col col-25 option-icon">
+            <i class="icon ion-chevron-right"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="item item-divider shop-section-title">
+      <span class="title-copy">Latest Coupons For You</span>
+      <a class="button button-small button-dark section-action" ui-sref="app.shop.popular">See All Coupons</a>
+    </div>
+    <div class="row shop-products-narrow-cards-outer shop-product-cards-scroller">
+      <div ng-repeat="product in products" class="col col-50 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id})">
+        <div class="list card">
+          <div class="item item-image">
+            <pre-img ratio="_1_1" helper-class="main-image">
+              <img ng-src="http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}}" spinner-on-load>
+            </pre-img>
+          </div>
+          <div class="item item-body">
+            <h2 class="card-title">{{product.offer.h1}}</h2>
+            <p class="card-description"><b>You Save: €{{product.offer.val}}</b> - {{product.offer.h2}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
