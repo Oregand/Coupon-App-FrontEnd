@@ -177,7 +177,14 @@ angular.module('PromoPay', [
   .state('facebook-sign-in', {
     url: "/facebook-sign-in",
     templateUrl: "views/auth/dont-have-facebook.html",
-    controller: 'WelcomeCtrl'
+    controller: 'WelcomeCtrl',
+    onEnter: function($state, AuthService){
+        if(!AuthService.isloggedIn()){
+           $state.go('dont-have-facebook');
+        } else {
+          $state.go('app.shop.home');
+        }
+    }
   })
 
   .state('dont-have-facebook', {

@@ -27,6 +27,10 @@ angular.module('PromoPay.app.services', [])
       JSON.parse(window.localStorage.PromoPay_user) : null;
   };
 
+  this.isloggedIn = function() {
+    return window.localStorage.PromoPay_user ? true : false;
+  };
+
   this.validateUserToken = function(user) {
 
     var baseString = user.email + ":" + user.password;

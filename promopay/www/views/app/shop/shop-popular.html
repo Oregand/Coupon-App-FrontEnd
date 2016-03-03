@@ -11,20 +11,40 @@
 
     <!-- Content -->
     <div class="row shop-products-narrow-cards-outer">
-      <li ng-show="!products.length">You have no coupons yet!</li>
-      <div ng-repeat="product in products" ng-if="product.vchr.spends.length == 0 || product.vchr == undefined ||  product.vchr !== null"  track by $index class="col col-100 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+      <div class="list card" ng-show="!products.length">
+        <div class="item item-avatar">
+          <h2>You Have No Vouchers Yet!</h2>
+          <p>Check Back Soon!</p>
+        </div>
+        <div class="item item-body">
+          <p>
+            This app allows you to browse, select and use offers made available to you from many retailers and
+            brands.  If not already done so, please register and remember the more information you provide us, the
+            better we can focus on the best offers for you.  Don’t forget to all ensure notifications are on so we can
+            send you the latest relevant offers
+          </p>
+        </div>
+      </div>
+      <div ng-repeat="product in products | orderBy:'product.valids[0].toT'" ng-if="product.vchr.spends.length == 0 || product.vchr == undefined ||  product.vchr !== null" track by $index class="col col-100 shop-product-narrow-card">
         <div class="list">
-          <div class="row">
+          <div class="row vouchers">
             <div class="col-25 list-image" style="background-image: url(http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}})"></div>
             <div class="col-75">
               <div class="item item-body">
                 <h2 class="card-title">{{product.offer.h1}}</h2>
-                <p class="card-description"><b>€{{product.offer.val}}</b> - {{product.offer.h2}}</p>
-                <button ng-if="product.vchr !== null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-                  <i class="icon ion-ios-pricetags"></i> Voucher
+                <p class="card-description">You Save: <b>€ {{product.offer.val}}</b></p>
+                <p class="card-description">{{product.offer.h2}}</p>
+                <button ng-if="product.vchr === null" class="button button-clear button-balanced states" ng-click="showAddToCartPopup(product)">
+                  <i class="icon ion-ios-checkmark"></i> Accept
                 </button>
-                <button ng-if="product.vchr === null" class="button button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-                  <i class="icon ion-ios-pricetags-outline"></i> Offer
+                <button ng-if="product.vchr === null" class="button button-clear button-assertive states" ng-click="removeVoucher(product)">
+                  <i class="icon ion-ios-close"></i> Reject
+                </button>
+                <button ng-if="product.vchr === null" class="button button-clear button-phs states" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+                  <i class="icon ion-log-in"></i> View
+                </button>
+                <button ng-if="product.vchr.spends.length == 0" class="button button-outline button-block button-balanced" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+                  <i class="icon ion-log-in"></i> View Your Voucher
                 </button>
               </div>
             </div>

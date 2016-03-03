@@ -69,5 +69,28 @@ ion-nav-bar
 {
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+    background-color: #fff;
+}
+
+.states {
+	width: 32%;
+	font-size: 0.76em;
+    border-color: #ddd !important;
+}
+
+.button-phs {
+	border-color: #EE7E22;
+    background-color: $theme-color-4;
+    color: #fff;
+}
+
+.row {
+	.vouchers {
+		border: thin solid #ddd;
+
+		.item {
+			border: none;
+		}
+	}
 }

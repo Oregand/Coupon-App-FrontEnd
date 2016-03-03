@@ -1,26 +1,25 @@
 <ion-view view-title="Promopay" class="shop-sale-view">
   <ion-content>
     <div class="row shop-products-narrow-cards-outer">
-      <li ng-show="!products.length">You have no coupons yet!</li>
       <div ng-repeat="product in products" ng-if="product.vchr.spends.length > 0" class="col col-100 shop-product-narrow-card" ui-sref="app.product-detail({productId: product.id})">
         <div class="list">
-          <div class="row">
+          <div class="row vouchers">
             <div class="col-25 list-image" style="background-image: url(http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}})"></div>
             <div class="col-75">
               <div class="item item-body">
                 <h2 class="card-title">{{product.offer.h1}}</h2>
                 <p class="card-description"><b>€{{product.offer.val}}</b> - {{product.offer.h2}}</p>
-                <button ng-if="product.vchr !== null" class="button button-block button-assertive" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-                  <i class="icon ion-ios-trash"></i> Expired Voucher
-                </button>
-                <button ng-if="product.vchr === null" class="button button-block button-assertive" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
-                  <i class="icon ion-ios-trash-outline"></i> Expired Offer
+                <button ng-if="product.vchr !== null" class="button button-block button-assertive">
+                  <i class="icon ion-clock"></i> Expired Voucher
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <button class="button button-full button-assertive" ng-click="clearCoupons()">
+        Clear Expired Coupons
+      </button>
     </div>
   </ion-content>
 </ion-view>

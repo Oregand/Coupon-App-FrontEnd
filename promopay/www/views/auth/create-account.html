@@ -39,6 +39,15 @@
             <label class="item item-input">
               <input type="number" placeholder="Age" name="age" ng-model="user.age" required>
             </label>
+            <label class="item item-input item-select" name="gender" ng-model="user.gender">
+               <div class="input-label">
+                 Gender
+               </div>
+               <select>
+                 <option>Male</option>
+                 <option selected>Female</option>
+               </select>
+             </label>
             <label class="item item-input" show-hide-container>
               <input type="password" placeholder="Password" name="password" ng-model="user.password" required show-hide-input>
             </label>

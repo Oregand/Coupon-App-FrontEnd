@@ -18,12 +18,20 @@
           <div class="col col-top">
             <ion-list>
               <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.shop.home">
-                <i class="menu-icon icon ion-bag"></i>
-                <h2 class="menu-text">All Coupons</h2>
+                <i class="menu-icon icon ion-ios-home"></i>
+                <h2 class="menu-text">All Vouchers</h2>
               </ion-item>
               <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.cart">
                 <i class="menu-icon icon ion-ios-cart"></i>
-                <h2 class="menu-text">Selected Coupons</h2>
+                <h2 class="menu-text">My PromoPay Wallet</h2>
+              </ion-item>
+              <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.profile.posts({userId:loggedUser._id})">
+                <i class="menu-icon icon ion-ios-person"></i>
+                <h2 class="menu-text">My Account</h2>
+              </ion-item>
+              <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.settings">
+                <i class="menu-icon icon ion-ios-gear"></i>
+                <h2 class="menu-text">My Account Settings</h2>
               </ion-item>
             </ion-list>
           </div>
@@ -31,18 +39,9 @@
         <div class="row menu-bottom-options">
           <div class="col col-bottom">
             <ion-list>
-              <ion-item class="user-item" menu-close ui-sref="app.profile.posts({userId:loggedUser._id})">
-                <!-- We need a wrapper with width set for the preload image directive -->
-                <div class="user-image-outer">
-                  <pre-img ratio="_1_1" helper-class="rounded-image">
-                    <img class="user-image" ng-src="img/avatar1.png" spinner-on-load>
-                	</pre-img>
-                </div>
-                <h2 class="menu-text">{{loggedUser.name}}</h2>
-              </ion-item>
               <ion-item class="full-width-item" menu-close ui-sref="app.shop.home">
-                <button class="button button-full button-assertive" ng-click="clearCoupons()">
-                  Clear Expired Coupons
+                <button class="button button-full button-balanced" ng-click="logOut()">
+                  Log Out
                 </button>
               </ion-item>
             </ion-list>

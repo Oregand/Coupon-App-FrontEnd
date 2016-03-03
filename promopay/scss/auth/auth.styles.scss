@@ -131,8 +131,17 @@
 			padding: 0px;
 		}
 
+		.item.item-input {
+			background-color: $auth-bg;
+
+			select {
+				background-color: $auth-bg;
+			}
+		}
+
 		.multi-inputs
 		{
+			border-right: thin solid #ddd;
 			.col
 			{
 				.item.item-input

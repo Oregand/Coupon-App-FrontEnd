@@ -49,7 +49,7 @@ angular.module('PromoPay.auth.controllers', [])
 	        picture : "http://graph.facebook.com/" + authResponse.userID + "/picture?type=large"
 	      });
 	      $ionicLoading.hide();
-	      $state.go('app.shop.home');
+	      $state.go('app.shop.popular');
 	    }, function(fail){
 	      // Fail get profile info
 	      console.log('profile info fail', fail);
@@ -103,13 +103,13 @@ angular.module('PromoPay.auth.controllers', [])
 								picture : "http://graph.facebook.com/" + success.authResponse.userID + "/picture?type=large"
 							});
 
-							$state.go('app.shop.home');
+							$state.go('app.shop.popular');
 						}, function(fail){
 							// Fail get profile info
 							console.log('profile info fail', fail);
 						});
 					} else {
-						$state.go('app.shop.home');
+						$state.go('app.shop.popular');
 					}
 	      } else {
 			  	console.log('getLoginStatus', success.status);
@@ -155,7 +155,7 @@ angular.module('PromoPay.auth.controllers', [])
 			$scope.loggedUser = $scope.user;
 
 			console.log($scope.user);
-			$state.go('app.shop.home');
+			$state.go('app.shop.popular');
 	    });
 	};
 
@@ -172,16 +172,7 @@ angular.module('PromoPay.auth.controllers', [])
 				window.localStorage.access_token = response.data.access_token;
 				AuthService.saveUser($scope.user);
 				$scope.loggedUser = $scope.user;
-				$state.go('app.shop.home');
-			} else {
-				var alertPopup = $ionicPopup.alert({
-				  title: 'Whoops!',
-				  template: 'Either the user name or password is incorrect'
-				});
-
-				alertPopup.then(function(res) {
-				  console.log('Try again');
-				});
+				$state.go('app.shop.popular');
 			}
 		});
 	};
@@ -222,7 +213,7 @@ angular.module('PromoPay.auth.controllers', [])
 		picture : "http://graph.facebook.com/" + authResponse.userID + "/picture?type=large"
 	  });
 	  $ionicLoading.hide();
-	  $state.go('app.shop.home');
+	  $state.go('app.shop.popular');
 	}, function(fail){
 	  // Fail get profile info
 	  console.log('profile info fail', fail);
@@ -276,13 +267,13 @@ angular.module('PromoPay.auth.controllers', [])
 							picture : "http://graph.facebook.com/" + success.authResponse.userID + "/picture?type=large"
 						});
 
-						$state.go('app.shop.home');
+						$state.go('app.shop.popular');
 					}, function(fail){
 						// Fail get profile info
 						console.log('profile info fail', fail);
 					});
 				} else {
-					$state.go('app.shop.home');
+					$state.go('app.shop.popular');
 				}
 	  } else {
 			console.log('getLoginStatus', success.status);

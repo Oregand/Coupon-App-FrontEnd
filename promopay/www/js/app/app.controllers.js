@@ -1,7 +1,7 @@
 angular.module('PromoPay.app.controllers', [])
 
 
-.controller('AppCtrl', function($scope, AuthService, PostService, ShopService) {
+.controller('AppCtrl', function($scope, AuthService, PostService, ShopService, $ionicLoading, $timeout, $state, $ionicHistory) {
 
     $scope.clearCoupons = function () {
       AuthService.getOauthToken().then(function(response) {
@@ -15,13 +15,25 @@ angular.module('PromoPay.app.controllers', [])
 
             angular.forEach($scope.products, function(value,index){
               console.log(value);
-                // if(value.vchr.spends.length > 0) {
-                //   array.splice(value, 1);
-                // }
+                if(value.vchr !== null && value.vchr.spends.length > 0) {
+                  array.splice(value, 1);
+                }
             });
           });
         });
       });
+    };
+
+
+    $scope.logOut = function() {
+      $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Logging Out</p>', duration: 3000 });
+      $timeout(function () {
+          $ionicLoading.hide();
+          $ionicHistory.clearCache();
+          $ionicHistory.clearHistory();
+          $ionicHistory.nextViewOptions({ disableBack: true, historyRoot: true });
+          $state.go('dont-have-facebook');
+          }, 30);
     };
 
 })
@@ -116,57 +128,6 @@ angular.module('PromoPay.app.controllers', [])
       console.log('made it');
   };
 
-  // show add to selected coupons popup on button click
-  $scope.showAddToCartPopup = function(product) {
-    $scope.data = {};
-    $scope.data.product = product;
-    $scope.data.productOption = 1;
-    $scope.data.productQuantity = 1;
-
-    var myPopup = $ionicPopup.show({
-      cssClass: 'add-to-cart-popup',
-      templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
-      title: 'Create This Voucher',
-      scope: $scope,
-      buttons: [
-        { text: '', type: 'close-popup ion-ios-close-outline' },
-        {
-          text: 'Create This Voucher',
-          onTap: function(e) {
-            return $scope.data;
-          }
-        }
-      ]
-    });
-    myPopup.then(function(res) {
-      if(res)
-      {
-        $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Adding to selected coupons</p>', duration: 1000 });
-        $scope.data.product = ShopService.addProductToCart(res.product);
-        console.log('Item added to selected coupons!', res);
-
-        var skipCache = true;
-
-        AuthService.getOauthToken(skipCache).then(function(response) {
-          $scope.oauthToken = response;
-
-          PostService.getOfferImpressions($scope.oauthToken, skipCache).then(function(response) {
-            $scope.offerImpressions = response.data;
-
-            ShopService.getProducts($scope.offerImpressions).then(function(products) {
-              $scope.products = products;
-              $scope.qrData = $scope.product.vchr.bcodes[2].b;
-              console.log($scope.products);
-            });
-          });
-        });
-      }
-      else {
-        console.log('Popup closed');
-      }
-    });
-  };
-
   //Social Sharing For individual coupons
   $scope.shareViaTwitter = function(product) {
       var message = product.title;
@@ -181,7 +142,7 @@ angular.module('PromoPay.app.controllers', [])
     };
 })
 
-.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService, $stateParams, $ionicLoading, $state) {
+.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService, $stateParams, $ionicLoading, $state, $ionicPopup) {
 
   $scope.products = [];
   $scope.listCanSwipe = true;
@@ -217,7 +178,6 @@ angular.module('PromoPay.app.controllers', [])
         ShopService.getProducts($scope.offerImpressions).then(function(products) {
           $scope.products = products;
           console.log($scope.products);
-          $state.go($state.current, {}, {reload: true});
         });
       });
     });
@@ -232,6 +192,63 @@ angular.module('PromoPay.app.controllers', [])
          filterProperties: 'id'
        });
      };
+
+     // show add to selected coupons popup on button click
+     $scope.showAddToCartPopup = function(product) {
+       $scope.data = {};
+       $scope.data.product = product;
+       $scope.data.productOption = 1;
+       $scope.data.productQuantity = 1;
+
+       var myPopup = $ionicPopup.show({
+         cssClass: 'add-to-cart-popup',
+         templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
+         title: 'Create This Voucher',
+         scope: $scope,
+         buttons: [
+           { text: '', type: 'close-popup ion-ios-close-outline' },
+           {
+             text: 'Create This Voucher',
+             onTap: function(e) {
+               return $scope.data;
+             }
+           }
+         ]
+       });
+       myPopup.then(function(res) {
+         if(res)
+         {
+           $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Adding to selected coupons</p>', duration: 1000 });
+           $scope.data.product = ShopService.addProductToCart(res.product);
+           console.log('Item added to selected coupons!', res);
+
+           var skipCache = true;
+
+           AuthService.getOauthToken(skipCache).then(function(response) {
+             $scope.oauthToken = response;
+
+             PostService.getOfferImpressions($scope.oauthToken, skipCache).then(function(response) {
+               $scope.offerImpressions = response.data;
+
+               ShopService.getProducts($scope.offerImpressions).then(function(products) {
+                 $scope.products = products;
+                 $scope.qrData = $scope.data.product.vchr.bcodes[2].b;
+                 console.log($scope.products);
+               });
+             });
+           });
+         }
+         else {
+           console.log('Popup closed');
+         }
+       });
+     };
+
+    $scope.removeVoucher = function (product) {
+      // product.removed =  true;
+      $scope.product = product;
+      console.log($scope.product);
+    };
 })
 
 
