@@ -145,8 +145,8 @@ angular.module('PromoPay.auth.controllers', [])
 		//save our logged user on the localStorage
 		$scope.user = user;
 		$scope.user.picture = "img/avatar1.png";
-		$scope.user.followers = 300;
-		$scope.user.following = 401;
+		$scope.user.followers = 0;
+		$scope.user.following = 0;
 
 		PostService.createUserObj($scope.user).then(function(response){
 	      	$scope.user._id = response.data._id;

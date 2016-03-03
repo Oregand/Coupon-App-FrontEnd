@@ -297,12 +297,23 @@ angular.module('PromoPay.app.controllers', [])
     $scope.privacy_policy_modal = modal;
   });
 
+  $ionicModal.fromTemplateUrl('views/app/legal/faq.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.faq_modal = modal;
+  });
+
   $scope.showTerms = function() {
     $scope.terms_of_service_modal.show();
   };
 
   $scope.showPrivacyPolicy = function() {
     $scope.privacy_policy_modal.show();
+  };
+
+  $scope.showFAQ = function() {
+    $scope.faq_modal.show();
   };
 
 })

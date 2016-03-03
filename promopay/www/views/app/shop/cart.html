@@ -8,7 +8,7 @@
     </div>
     <div ng-if="products.length > 0">
       <div class="products-list">
-        <div class="product-list-item" ng-repeat="product in products" ui-sref="app.product-detail({productId: product.id})">
+        <div class="product-list-item" ng-repeat="product in products">
           <div class="row product-title-wrapper">
             <span class="product-title">{{product.offer.h1}}</span>
           </div>
@@ -16,7 +16,7 @@
             <div class="col">
               <div class="product-picture">
                 <pre-img ratio="_1_1" helper-class="main-image">
-                  <img ng-src="img/sample_images/products/2.jpeg" spinner-on-load>
+                  <img ng-src="http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}}" spinner-on-load ui-sref="app.product-detail({productId: product.id})">
                 </pre-img>
               </div>
               <div class="product-options-wrapper">

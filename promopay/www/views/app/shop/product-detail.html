@@ -21,6 +21,12 @@
             <p class="product-description">
                 <strong>QR Code</strong></br>
             </p>
+            <div class="list card" ng-if="!qrData">
+              <div class="item item-avatar">
+                <h2>Nothing Yet!</h2>
+                <p>Accept this voucher to generate the barcodes</p>
+              </div>
+            </div>
             <qr text="qrData" ng-if="qrData"></qr>
           </div>
         </div>
