@@ -8,7 +8,7 @@
     </div>
     <div ng-if="products.length > 0">
       <div class="products-list">
-        <div class="product-list-item" ng-repeat="product in products">
+        <div class="product-list-item" ng-repeat="product in products" ng-if="product.vchr !== null" track by $index>
           <div class="row product-title-wrapper">
             <span class="product-title">{{product.offer.h1}}</span>
           </div>
@@ -21,13 +21,16 @@
               </div>
               <div class="product-options-wrapper">
                 <div class="row remove-product-wrapper">
-                  <div class="col col-center col-75">
-                    <button class="button button-clear button-small button-assertive remove-product-button" ng-click="removeProductFromCart(product)">
+                  <div class="col col-center col-50">
+                    <span class="product-price">Value: €{{product.offer.val}}</span>
+                  </div>
+                  <div class="col col-center col-50">
+                    <button class="button button-outline button-assertive remove-product-button" ng-click="removeProductFromCart(product)">
                       Remove Coupon
                     </button>
-                  </div>
-                  <div class="col col-center col-25">
-                    <span class="product-price">Value: €{{product.offer.val}}</span>
+                    <button class="button button-outline button-assertive" ui-sref="app.product-detail({productId: product.id})">
+                      Use Coupon
+                    </button>
                   </div>
                 </div>
               </div>

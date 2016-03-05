@@ -1,21 +1,38 @@
 <ion-view view-title="" class="product-view">
-  <ion-content overflow-scroll="true">
+  <ion-content>
     <div class="product-card-content">
-      <div class="item item-image">
-        <pre-img ratio="_1_1" helper-class="main-image">
-          <img ng-src="http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}}" spinner-on-load>
-        </pre-img>
-      </div>
-      <div class="item item-body">
+      <div class="col">
+        <div class="item item-image single-image">
+          <pre-img ratio="_1_1" helper-class="main-image">
+            <img ng-src="http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}}" spinner-on-load>
+          </pre-img>
+        </div>
+        <div class="btn-single">
         <h2 class="product-title">{{product.offer.h1}}</h2>
         <div>
           <p class="product-like"><i></i>You Save:</p>
           <p class="likes"><i class="icon ion-social-euro"></i> {{product.offer.val}}</p>
         </div>
-        <p class="product-price" ui-sref="app.shop.popular">Back To Home</p>
+        <button class="button button-outline button-balanced" ng-click="showAddToCartPopup(product)">
+          <i class="icon ion-ios-checkmark"></i>
+        </button>
+        <button class="button button-outline btn-phs" ui-sref="app.shop.popular">
+          <i class="icon ion-ios-home"></i>
+        </button>
+      </div>
+      <p class="product-description">{{product.offer.h2}}</p>
+    </div>
+      <div class="item item-body">
+        <div class="barcodes">
+          <div class="human-code">
+            <p class="product-description">
+                <strong>Human Readable Barcode</strong></br>
+                {{product.vchr.bcodes[2].b}}
+            </p>
+          </div>
+        </div>
       </div>
       <div class="item item-body">
-        <p class="product-description">{{product.offer.h2}}</p>
         <div class="barcodes">
           <div class="qr-code">
             <p class="product-description">
@@ -23,11 +40,11 @@
             </p>
             <div class="list card" ng-if="!qrData">
               <div class="item item-avatar">
-                <h2>Nothing Yet!</h2>
-                <p>Accept this voucher to generate the barcodes</p>
+                <h2>No Codes Yet!</h2>
+                <p>Click The Green Button Above To Generate This Coupon</p>
               </div>
             </div>
-            <qr text="qrData" ng-if="qrData"></qr>
+            <qr size="100" text="qrData" ng-if="qrData"></qr>
           </div>
         </div>
       </div>
@@ -38,16 +55,6 @@
                 <strong>Machine Readable Barcode</strong></br>
             </p>
             <barcode type="code128b" render="img" string="{{product.vchr.bcodes[2].b}}" options="vm.options" ></barcode>
-          </div>
-        </div>
-      </div>
-      <div class="item item-body">
-        <div class="barcodes">
-          <div class="human-code">
-            <p class="product-description">
-                <strong>Human Readable Barcode</strong></br>
-                {{product.vchr.bcodes[2].b}}
-            </p>
           </div>
         </div>
       </div>

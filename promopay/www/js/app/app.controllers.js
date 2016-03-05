@@ -105,7 +105,7 @@ angular.module('PromoPay.app.controllers', [])
   var vm = this;
   vm.options = {
       width: 2,
-      height: 100,
+      height: 40,
       quite: 10,
       displayValue: true,
       font: "monospace",
@@ -124,29 +124,66 @@ angular.module('PromoPay.app.controllers', [])
     console.log($scope.product);
   });
 
-  $scope.shareCoupon = function () {
-      console.log('made it');
+  // show add to selected coupons popup on button click
+  $scope.showAddToCartPopup = function(product) {
+    $scope.data = {};
+    $scope.data.product = product;
+    $scope.data.productOption = 1;
+    $scope.data.productQuantity = 1;
+
+    var myPopup = $ionicPopup.show({
+      cssClass: 'add-to-cart-popup',
+      templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
+      title: 'Create This Voucher',
+      scope: $scope,
+      buttons: [
+        { text: '', type: 'close-popup ion-ios-close-outline' },
+        {
+          text: 'Create This Voucher',
+          onTap: function(e) {
+            return $scope.data;
+          }
+        }
+      ]
+    });
+    myPopup.then(function(res) {
+      if(res)
+      {
+        $ionicLoading.show({ template: '<ion-spinner icon="ios"></ion-spinner><p style="margin: 5px 0 0 0;">Adding to selected coupons</p>', duration: 1000 });
+        $scope.data.product = ShopService.addProductToCart(res.product);
+        console.log('Item added to selected coupons!', res);
+
+        var skipCache = true;
+
+        AuthService.getOauthToken(skipCache).then(function(response) {
+          $scope.oauthToken = response;
+
+          PostService.getOfferImpressions($scope.oauthToken, skipCache).then(function(response) {
+            $scope.offerImpressions = response.data;
+
+            ShopService.getProducts($scope.offerImpressions).then(function(products) {
+              $scope.products = products;
+              $scope.qrData = $scope.data.product.vchr.bcodes[2].b;
+            });
+          });
+        });
+      }
+      else {
+        console.log('Popup closed');
+      }
+    });
   };
 
-  //Social Sharing For individual coupons
-  $scope.shareViaTwitter = function(product) {
-      var message = product.title;
-      var image = product.picture;
-      var link = product.description;
-      $cordovaSocialSharing.share(message, image, link)
-        .then(function(result) {
-          console.log(result);
-        }, function(err) {
-          console.log(err);
-        });
-    };
 })
 
-.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService, $stateParams, $ionicLoading, $state, $ionicPopup) {
+.controller('ShopCtrl', function($scope, ShopService, $ionicFilterBar, $timeout, AuthService, PostService, UserService, $stateParams, $ionicLoading, $state, $ionicPopup) {
 
   $scope.products = [];
   $scope.listCanSwipe = true;
   var filterBarInstance;
+
+  $scope.user = UserService.getUser();
+  console.log($scope.user);
 
   if(window.localStorage.offerImpressions !== 'undefined') {
     $ionicLoading.show({
@@ -234,6 +271,7 @@ angular.module('PromoPay.app.controllers', [])
                  $scope.products = products;
                  $scope.qrData = $scope.data.product.vchr.bcodes[2].b;
                  console.log($scope.products);
+                 $state.go('app.cart');
                });
              });
            });
@@ -253,7 +291,7 @@ angular.module('PromoPay.app.controllers', [])
 
 
 .controller('ShoppingCartCtrl', function($scope, ShopService, $ionicActionSheet, _) {
-  $scope.products = ShopService.getCartProducts();
+  $scope.products = ShopService.getCartProducts($scope);
 
   $scope.removeProductFromCart = function(product) {
     $ionicActionSheet.show({
@@ -264,7 +302,7 @@ angular.module('PromoPay.app.controllers', [])
       },
       destructiveButtonClicked: function() {
         ShopService.removeProductFromCart(product);
-        $scope.products = ShopService.getCartProducts();
+        $scope.products = ShopService.getCartProducts($scope);
         return true;
       }
     });

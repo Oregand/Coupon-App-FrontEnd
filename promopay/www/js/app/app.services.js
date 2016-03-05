@@ -260,7 +260,7 @@ angular.module('PromoPay.app.services', [])
   };
 })
 
-.service('ShopService', function ($http, $q, _, AuthService){
+.service('ShopService', function ($http, $q, _, AuthService, PostService){
 
   this.getProducts = function(offerImpressions) {
     var dfd = $q.defer();
@@ -315,8 +315,24 @@ angular.module('PromoPay.app.services', [])
     return productToAdd;
   };
 
-  this.getCartProducts = function(){
-    return JSON.parse(window.localStorage.ionTheme1_cart || '[]');
+  this.getCartProducts = function($scope){
+    var cart_products = [];
+    //Load Products Into Array
+    AuthService.getOauthToken().then(function(response) {
+      $scope.oauthToken = response;
+
+      PostService.getOfferImpressions($scope.oauthToken).then(function(response) {
+        $scope.offerImpressions = response.data;
+        $scope.products = $scope.offerImpressions;
+        angular.forEach($scope.products, function(value,index){
+            if(value.vchr !== null) {
+              cart_products.push(value);
+            }
+        });
+        console.log(cart_products);
+        return cart_products;
+      });
+    });
   };
 
   this.removeProductFromCart = function(productToRemove){

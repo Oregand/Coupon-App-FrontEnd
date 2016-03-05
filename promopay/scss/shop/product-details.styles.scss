@@ -23,6 +23,36 @@ ion-nav-bar
     top: 0px !important;
   }
 
+
+  .single-image {
+    width: 50%;
+    display: inline-block;
+
+    img {
+      border: none;
+    }
+  }
+
+  .btn-single {
+    width: 49%;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 0 0 1em 0;
+
+    button {
+      width: 98%;
+      margin: 0 0 1em 0;
+    }
+  }
+
+  .btn-phs {
+    background-color: #fff;
+    border-color: $theme-color-4;
+    color: $theme-color-4;
+  }
+
   .product-card-content
   {
     border-bottom: 10px solid rgba(darken($shop-details-bg, 10%), .8);
@@ -41,9 +71,10 @@ ion-nav-bar
 
   .product-title
   {
-    margin: 0px;
+    margin: 0 0 1em 0;
     color: $shop-text-color;
     font-weight: 500;
+    font-size: 0.9em;
   }
 
   .product-description
@@ -70,7 +101,7 @@ ion-nav-bar
 
       .human-code
       {
-        
+
       }
   }
 
