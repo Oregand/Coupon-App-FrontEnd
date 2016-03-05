@@ -43,7 +43,7 @@
                 <button ng-if="product.vchr === null" class="button button-outline button-block button-phs" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
                   <i class="icon ion-log-in"></i> View
                 </button>
-                <button ng-if="product.vchr.spends.length === 0" class="button button-outline button-block btn-view" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
+                <button ng-if="product.vchr.spends.length === 0" class="button button-outline button-block button-positive" ui-sref="app.product-detail({productId: product.id, productTitle: product.offer.val})">
                   <i class="icon ion-log-in"></i> View Your Voucher
                 </button>
               </div>

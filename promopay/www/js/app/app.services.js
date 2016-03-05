@@ -325,12 +325,12 @@ angular.module('PromoPay.app.services', [])
         $scope.offerImpressions = response.data;
         $scope.products = $scope.offerImpressions;
         angular.forEach($scope.products, function(value,index){
-            if(value.vchr !== null) {
-              cart_products.push(value);
+            if(value.vchr === null) {
+              $scope.products.splice(index, 1);
             }
         });
-        console.log(cart_products);
-        return cart_products;
+        console.log($scope.products);
+        return $scope.products;
       });
     });
   };
