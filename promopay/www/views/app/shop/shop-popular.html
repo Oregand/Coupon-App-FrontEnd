@@ -25,7 +25,7 @@
           </p>
         </div>
       </div>
-      <div ng-repeat="product in products | orderBy:'product.valids[0].toT'" ng-if="product.vchr !== null && product.vchr.spends.length <= 0 ||  product.vchr === null" track by $index class="col col-100 shop-product-narrow-card">
+      <div ng-repeat="product in products | orderBy:'product.valids[0].toT'" ng-if="product.vchr !== null && product.vchr.spends.length <= 0 ||  product.vchr === null || product.removed < 1" track by $index class="col col-100 shop-product-narrow-card">
         <div class="list">
           <div class="row vouchers">
             <div class="col-25 list-image" style="background-image: url(http://www.rglhosting2.com/validation.3.0.dag/images/vouchers/{{product.offer.imgName}})"></div>

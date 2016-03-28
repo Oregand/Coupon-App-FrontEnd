@@ -283,9 +283,8 @@ angular.module('PromoPay.app.controllers', [])
      };
 
     $scope.removeVoucher = function (product) {
-      // product.removed =  true;
+      product.removed =  true;
       $scope.product = product;
-      console.log($scope.product);
     };
 })
 
