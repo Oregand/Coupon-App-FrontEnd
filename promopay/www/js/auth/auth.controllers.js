@@ -164,6 +164,9 @@ angular.module('PromoPay.auth.controllers', [])
 .controller('WelcomeBackCtrl', function($scope, $state, $ionicModal, $ionicPopup, $cordovaOauth, AuthService, PostService, $stateParams){
 	$scope.doLogIn = function(user){
 		$scope.user = user;
+		$scope.user.picture = "img/avatar1.png";
+		$scope.user.followers = user.followers;
+		$scope.user.following = user.following;
 
 		PostService.validateUserObj($scope.user).then(function(response){
 			$scope.user._id = response.data._id;

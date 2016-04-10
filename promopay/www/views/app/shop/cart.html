@@ -1,4 +1,4 @@
-<ion-view view-title="PromoPay Wallet" class="cart-view" cache-view="false">
+<ion-view view-title="MyPromoPay Wallet" class="cart-view" cache-view="false">
   <ion-content>
     <div ng-if="products.length == 0">
       <div class="empty-cart">
@@ -22,16 +22,17 @@
               <div class="product-options-wrapper">
                 <div class="row remove-product-wrapper">
                   <div class="col col-center col-50">
-                    <span class="product-price">Value: €{{product.offer.val}}</span>
-                  </div>
-                  <div class="col col-25">
-                    <button class="button button-outline button-balanced" ui-sref="app.product-detail({productId: product.id})">
-                      <i class="icon ion-ios-checkmark"></i> Use
-                    </button>
+                    <span class="product-price">Value: €{{product.offer.val}}</span></br>
+                    <span class="product-price">{{product.vchr.validTxt}}</span>
                   </div>
                   <div class="col col-25">
                     <button class="button button-outline button-assertive remove-product-button" ng-click="removeProductFromCart(product)">
                       <i class="icon ion-ios-close"></i> Remove
+                    </button>
+                  </div>
+                  <div class="col col-25">
+                    <button class="button button-outline button-balanced" ui-sref="app.product-detail({productId: product.id})">
+                      <i class="icon ion-ios-checkmark"></i> Use
                     </button>
                   </div>
                 </div>

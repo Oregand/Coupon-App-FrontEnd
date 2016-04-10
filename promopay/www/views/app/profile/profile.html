@@ -36,14 +36,14 @@
         <div class="row split-actions" ng-if="myProfile">
           <div class="col">
             <button class="button button-block icon-left ion-gear-a settings-button" ui-sref="app.settings">
-              Settings
+              History
             </button>
           </div>
         </div>
         <div class="row split-actions">
           <div class="col user-interaction">
             <p>
-              <a class="user-interaction-tab" ng-class="{active: ('app.profile.posts' | includedByState)}" nav-transition="none" ng-click="getUserPosts(user._id)" role="tab">Total Vouchers Used: <b>{{user.followers}}</b></a>
+              <a class="user-interaction-tab" ng-class="{active: ('app.profile.posts' | includedByState)}" nav-transition="none" ng-click="getUserPosts(user._id)" role="tab">Total Coupons Used: <b>{{user.followers}}</b></a>
             </p>
           </div>
           <div class="col user-interaction">
@@ -53,6 +53,33 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Name</span>
+            <input class="multi-input" type="text" placeholder="Name" name="name" ng-model="user.name">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Phone Number</span>
+            <input type="tel" placeholder="Phone Number (Optional)" name="phone" ng-model="user.phone">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Email</span>
+            <input type="email" placeholder="Email" name="email" ng-model="user.email">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Password</span>
+            <input type="password" placeholder="Password" name="password" ng-model="user.password">
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" class="sign-up button button-block" ng-click="updateInformation(user)">
+        Save Information
+      </button>
     </div>
   </ion-content>
 </ion-view>

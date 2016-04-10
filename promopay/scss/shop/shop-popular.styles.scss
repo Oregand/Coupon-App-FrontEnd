@@ -5,3 +5,21 @@
 .expired-coupon {
 
 }
+
+.item {
+  button {
+    border-radius: 25px;
+  }
+
+  .button-positive {
+    border-color: rgb(0, 51, 102);
+    color: rgb(0, 51, 102);
+    background: white;
+  }
+
+  .card-description {
+    .amount {
+      font-size: 1em;
+    }
+  }
+}

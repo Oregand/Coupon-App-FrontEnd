@@ -27,6 +27,10 @@ ion-nav-bar
 	background-color: $shop-background-color;
 	color: $shop-text-color;
 
+	button {
+		height: 80px;
+	}
+
 	.empty-cart
   {
     text-align: center;
@@ -67,11 +71,12 @@ ion-nav-bar
 
 	.product-content-wrapper
 	{
+		height: 120px;
 		padding: 0px;
-  	margin-left: 10px;
+  		margin-left: 10px;
 		width: initial;
 		margin-top: 0px;
-	  border-bottom: 1px solid rgba(lighten($shop-text-color, 50%), .5);
+	  	border-bottom: 1px solid rgba(lighten($shop-text-color, 50%), .5);
 
 		& > .col
 		{

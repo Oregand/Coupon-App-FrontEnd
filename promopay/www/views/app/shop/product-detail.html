@@ -13,21 +13,24 @@
           <p class="product-like"><i></i>You Save:</p>
           <p class="likes"><i class="icon ion-social-euro"></i> {{product.offer.val}}</p>
         </div>
-        <button class="button button-outline button-balanced" ng-click="showAddToCartPopup(product)">
+        <button ng-if="product.vchr === null" class="button button-outline button-balanced" ng-click="showAddToCartPopup(product)">
           <i class="icon ion-ios-checkmark"></i>
+        </button>
+        <button ng-if="product.vchr !== null" class="button button-outline button-balanced">
+          T&C
         </button>
         <button class="button button-outline btn-phs" ui-sref="app.shop.popular">
           <i class="icon ion-ios-home"></i>
         </button>
       </div>
-      <p class="product-description">{{product.offer.h2}}</p>
+      <p class="product-description padding-top">{{product.offer.h2}}</p>
     </div>
       <div class="item item-body">
         <div class="barcodes">
           <div class="human-code">
             <p class="product-description">
                 <strong>Human Readable Barcode</strong></br>
-                {{product.vchr.bcodes[2].b}}
+                {{humanCode}}
             </p>
           </div>
         </div>

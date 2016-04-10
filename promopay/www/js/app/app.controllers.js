@@ -94,6 +94,22 @@ angular.module('PromoPay.app.controllers', [])
 		});
 	};
 
+  $scope.updateInformation = function(user) {
+
+    $scope.user = user;
+    $scope.user.picture = "img/avatar1.png";
+    $scope.user.followers = 0;
+    $scope.user.following = 0;
+
+    PostService.createUserObj($scope.user).then(function(response){
+          $scope.user._id = response.data._id;
+
+      AuthService.saveUser($scope.user);
+      $scope.loggedUser = $scope.user;
+
+      });
+  };
+
 })
 
 
@@ -119,9 +135,23 @@ angular.module('PromoPay.app.controllers', [])
     $scope.product = product;
     if($scope.product.vchr !== null) {
       $scope.qrData = $scope.product.vchr.bcodes[2].b;
+      $scope.humanCode = dashafy($scope.product.vchr.bcodes[2].b);
     }
 
-    console.log($scope.product);
+    function dashafy( num ) {
+        var str = num.toString().split('.');
+        if (str[0].length >= 5) {
+            str[0] = str[0].replace(/(.{3})/g, "$1 ");
+        }
+        if (str[1] && str[1].length >= 5) {
+            str[1] = str[1].replace(/(.{3})/g, "$1 ");
+        }
+
+        str = str.join('.');
+        str = str.substring(0, str.length - 1);
+
+        return str;
+    }
   });
 
   // show add to selected coupons popup on button click
@@ -134,12 +164,12 @@ angular.module('PromoPay.app.controllers', [])
     var myPopup = $ionicPopup.show({
       cssClass: 'add-to-cart-popup',
       templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
-      title: 'Create This Voucher',
+      title: 'Create This Coupon',
       scope: $scope,
       buttons: [
         { text: '', type: 'close-popup ion-ios-close-outline' },
         {
-          text: 'Create This Voucher',
+          text: 'Create This Coupon',
           onTap: function(e) {
             return $scope.data;
           }
@@ -240,12 +270,12 @@ angular.module('PromoPay.app.controllers', [])
        var myPopup = $ionicPopup.show({
          cssClass: 'add-to-cart-popup',
          templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
-         title: 'Create This Voucher',
+         title: 'Create This Coupon',
          scope: $scope,
          buttons: [
            { text: '', type: 'close-popup ion-ios-close-outline' },
            {
-             text: 'Create This Voucher',
+             text: 'Create This Coupon',
              onTap: function(e) {
                return $scope.data;
              }

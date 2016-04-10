@@ -80,6 +80,10 @@ ion-nav-bar
   .product-description
   {
     margin-top: 0px;
+
+    &.padding-top {
+      margin-top: 50px;
+    }
   }
 
 	.item-select
