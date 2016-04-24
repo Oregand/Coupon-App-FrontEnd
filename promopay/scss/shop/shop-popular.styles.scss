@@ -1,6 +1,11 @@
 .shop-popular-view
 {
   background-color: $shop-background-color;
+
+  .card-description  {
+    font-size: 14px !important;
+    margin: 5px 0px 0px !important;
+  }
 }
 .expired-coupon {
 

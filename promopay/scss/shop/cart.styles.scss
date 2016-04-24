@@ -29,12 +29,16 @@ ion-nav-bar
 
 	button {
 		height: 80px;
-		width: 60px;
+		width: 50px;
 		font-size: 10px;
 
 		i {
 			display: block;
 		}
+	}
+
+	.flex {
+		display: flex;
 	}
 
 	.product-price {
@@ -179,8 +183,9 @@ ion-nav-bar
 			.remove-product-button
 			{
 				padding: 0px;
-				font-size: 14px;
-				margin-left: 3px;
+				font-size: 12px;
+				margin-left: 0px;
+				border-radius: 10px;
 			}
 		}
 	}

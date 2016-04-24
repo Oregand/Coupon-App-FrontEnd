@@ -28,6 +28,7 @@ ion-nav-bar
 		{
 			.split-actions
 			{
+				margin-bottom: 40px;
 				.button
 				{
 					&.activated,
@@ -228,5 +229,9 @@ ion-nav-bar
 		{
 			padding: 0px;
 		}
+	}
+
+	.user-form {
+		background-color: white;
 	}
 }
