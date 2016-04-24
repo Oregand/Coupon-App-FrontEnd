@@ -104,8 +104,6 @@ angular.module('PromoPay.app.controllers', [])
 
         $scope.user = user;
         $scope.user.picture = "img/avatar1.png";
-        $scope.user.followers = 0;
-        $scope.user.following = 0;
 
         PostService.createUserObj($scope.user).then(function(response) {
             $scope.user._id = response.data._id;
@@ -356,8 +354,11 @@ angular.module('PromoPay.app.controllers', [])
                 return true;
             },
             destructiveButtonClicked: function() {
+                product.removed = true;
+                $scope.product = product;
                 var index = $scope.products.indexOf(product);
                 $scope.products = $scope.products.splice(index, 1);
+                console.log($scope.products);
                 return true;
             }
         });

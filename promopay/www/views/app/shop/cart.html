@@ -8,7 +8,7 @@
     </div>
     <div ng-if="products.length > 0">
       <div class="products-list">
-        <div class="product-list-item" ng-repeat="product in products" ng-if="product.vchr !== null" track by $index>
+        <div class="product-list-item" ng-repeat="product in products" ng-if="product.vchr !== null && product.removed !== true" track by $index>
           <div class="row product-title-wrapper">
             <span class="product-title">{{product.offer.h1}}</span>
           </div>
