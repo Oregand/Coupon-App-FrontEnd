@@ -29,6 +29,19 @@ ion-nav-bar
 
 	button {
 		height: 80px;
+		width: 60px;
+		font-size: 10px;
+
+		i {
+			display: block;
+		}
+	}
+
+	.product-price {
+		display: block;
+		position: relative;
+		top: 10px;
+		left: 10px;
 	}
 
 	.empty-cart

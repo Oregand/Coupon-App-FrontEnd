@@ -120,8 +120,8 @@ angular.module('PromoPay.app.controllers', [])
   //Set the options for the barcode display
   var vm = this;
   vm.options = {
-      width: 2,
-      height: 40,
+      width: 3,
+      height: 100,
       quite: 10,
       displayValue: true,
       font: "monospace",
@@ -330,8 +330,8 @@ angular.module('PromoPay.app.controllers', [])
         return true;
       },
       destructiveButtonClicked: function() {
-        ShopService.removeProductFromCart(product);
-        $scope.products = ShopService.getCartProducts($scope);
+        var index = $scope.products.indexOf(product);
+        $scope.products = $scope.products.splice(index, 1);    
         return true;
       }
     });

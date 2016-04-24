@@ -9,8 +9,11 @@
               <div class="item item-body">
                 <h2 class="card-title">{{product.offer.h1}}</h2>
                 <p class="card-description"><b>€{{product.offer.val}}</b> - {{product.offer.h2}}</p>
-                <button ng-if="product.vchr !== null" class="button button-outline button-block button-assertive">
+                <button ng-if="product.vchr !== null  && product.vchr.spends >= 1" class="button button-outline button-block button-assertive">
                   <i class="icon ion-clock"></i> Used Coupon
+                </button>
+                <button ng-if="product.vchr !== null && product.vchr.spends === 0" class="button button-outline button-block button-assertive">
+                  <i class="icon ion-clock"></i> Expired Coupon
                 </button>
               </div>
             </div>

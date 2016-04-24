@@ -22,16 +22,14 @@
               <div class="product-options-wrapper">
                 <div class="row remove-product-wrapper">
                   <div class="col col-center col-50">
-                    <span class="product-price">Value: €{{product.offer.val}}</span></br>
+                    <span class="product-price">Value: €{{product.offer.val}}</span>
                     <span class="product-price">{{product.vchr.validTxt}}</span>
                   </div>
-                  <div class="col col-25">
+                  <div class="col col-50">
                     <button class="button button-outline button-assertive remove-product-button" ng-click="removeProductFromCart(product)">
                       <i class="icon ion-ios-close"></i> Remove
                     </button>
-                  </div>
-                  <div class="col col-25">
-                    <button class="button button-outline button-balanced" ui-sref="app.product-detail({productId: product.id})">
+                    <button class="button button-outline button-balanced remove-product-button" ui-sref="app.product-detail({productId: product.id})">
                       <i class="icon ion-ios-checkmark"></i> Use
                     </button>
                   </div>
