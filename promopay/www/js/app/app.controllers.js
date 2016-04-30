@@ -359,15 +359,20 @@ angular.module('PromoPay.app.controllers', [])
                 var index = $scope.products.indexOf(product);
                 $scope.products = $scope.products.splice(index, 1);
                 console.log($scope.products);
+                getSubtotal();
                 return true;
             }
         });
     };
 
     $scope.getSubtotal = function() {
-        return _.reduce($scope.products, function(memo, product) {
-            return memo + product.offer.val;
-        }, 0);
+        var subTotal = 0;
+        for (var i = 0; i < $scope.products.length; i++) {
+            if ($scope.products[i].vchr !== null) {
+                subTotal += $scope.products[i].vchr.val;
+            }
+        }
+        return subTotal;
     };
 
 })
