@@ -19,23 +19,27 @@
             <ion-list>
               <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.shop.popular">
                 <i class="menu-icon icon ion-ios-home"></i>
-                <h2 class="menu-text">All Vouchers</h2>
+                <h2 class="menu-text">All Offers</h2>
               </ion-item>
               <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.shop.sale">
                 <i class="menu-icon icon ion-ios-cart"></i>
-                <h2 class="menu-text">History (Used and Expired Offers)</h2>
+                <h2 class="menu-text">History</h2>
               </ion-item>
               <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.profile.posts({userId:loggedUser._id})">
                 <i class="menu-icon icon ion-ios-person"></i>
-                <h2 class="menu-text">User Settings and Profile</h2>
+                <h2 class="menu-text">Settings</h2>
               </ion-item>
               <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.settings">
                 <i class="menu-icon icon ion-ios-help"></i>
-                <h2 class="menu-text">FAQ + Help</h2>
+                <h2 class="menu-text">FAQ/Help</h2>
               </ion-item>
               <ion-item ui-sref-active="active" class="item-icon-left" menu-close ui-sref="app.settings">
                 <i class="menu-icon icon ion-ios-gear"></i>
-                <h2 class="menu-text">Terms of Service + Privacy Policy</h2>
+                <h2 class="menu-text">Terms Of Service</h2>
+              </ion-item>
+              <ion-item ui-sref-active="active" class="item-icon-left" ng-click="logOut()">
+                <i class="menu-icon icon ion-close-circled"></i>
+                <h2 class="menu-text">Sign Out</h2>
               </ion-item>
             </ion-list>
           </div>
