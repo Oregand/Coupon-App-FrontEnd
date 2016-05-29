@@ -168,13 +168,13 @@ angular.module('PromoPay.app.controllers', [])
         var myPopup = $ionicPopup.show({
             cssClass: 'add-to-cart-popup',
             templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
-            title: 'Create This Coupon',
+            title: 'Generate your offer code',
             scope: $scope,
             buttons: [{
                 text: '',
                 type: 'close-popup ion-ios-close-outline'
             }, {
-                text: 'Create This Coupon',
+                text: 'Generate your offer code',
                 onTap: function(e) {
                     return $scope.data;
                 }
@@ -276,13 +276,13 @@ angular.module('PromoPay.app.controllers', [])
         var myPopup = $ionicPopup.show({
             cssClass: 'add-to-cart-popup',
             templateUrl: 'views/app/shop/partials/add-to-cart-popup.html',
-            title: 'Create This Coupon',
+            title: 'Generate your offer code',
             scope: $scope,
             buttons: [{
                 text: '',
                 type: 'close-popup ion-ios-close-outline'
             }, {
-                text: 'Create This Coupon',
+                text: 'Generate your offer code',
                 onTap: function(e) {
                     return $scope.data;
                 }
